@@ -1,0 +1,283 @@
+\hypertarget{algorytm_b_f_8h}{}\doxysection{Dokumentacja pliku wersja\+Graficzna/algorytm\+BF.h}
+\label{algorytm_b_f_8h}\index{wersjaGraficzna/algorytmBF.h@{wersjaGraficzna/algorytmBF.h}}
+
+
+Plik nagłówkowy modułu algorytm\+BF.  
+
+
+{\ttfamily \#include \char`\"{}tworzenie\+Mapy.\+h\char`\"{}}\newline
+Wykres zależności załączania dla algorytm\+BF.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{algorytm_b_f_8h__incl}
+\end{center}
+\end{figure}
+Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{algorytm_b_f_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Komponenty}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_punkt}{Punkt}}
+\begin{DoxyCompactList}\small\item\em Koordynaty punktu na mapie. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_krawedz}{Krawedz}}
+\begin{DoxyCompactList}\small\item\em Krawędź łącząca pola na mapie. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_s_a_m}{SAM}}
+\begin{DoxyCompactList}\small\item\em Struktura przechowująca start i metę \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{algorytm_b_f_8h_abd257517caa7b01e98dc4e92386a2969}{znajdz\+Indeks\+Punktu}} (\mbox{\hyperlink{structparametry_mapy}{parametry\+Mapy}} PM, int X, int Y)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracająca indeks pola na mapie. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_punkt}{Punkt}} \mbox{\hyperlink{algorytm_b_f_8h_a965e79f6cda1e7c6a7b3f4c55de69110}{znajdz\+Wspolrzedne\+Punktu}} (int indeks, \mbox{\hyperlink{structparametry_mapy}{parametry\+Mapy}} PM)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracająca współrzędne punktu na mapie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{algorytm_b_f_8h_a496f925a65c652d38bb92a3b256c3249}{stworz\+Tabele\+Najkrotszych\+Polaczen}} (int $\ast$\&tabela\+Polaczen, int start, \mbox{\hyperlink{structparametry_mapy}{parametry\+Mapy}} PM)
+\begin{DoxyCompactList}\small\item\em Funkcja tworząca tablicę najkrótszych połączeń \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{algorytm_b_f_8h_a38a9124d8f094c4ba38f5216585a8bc6}{stworz\+Tablice\+Kosztow}} (int $\ast$\&tabela\+Kosztow, int start, \mbox{\hyperlink{structparametry_mapy}{parametry\+Mapy}} PM)
+\begin{DoxyCompactList}\small\item\em Funkcja tworząca tablicę kosztów dotarcia do celu Funkcja uzupełniająca tablicę wartością 0 dla pola wskazanego jako start co oznacza, że koszt dotarcia do pola, z którego się zaczyna jest równy zero Dla każdego innego pola na mapie zostaje przypisana wartość nie możliwa do osiągnięcia czyli kwadrat rozmiaru całej mapy jako domyślna wartość kosztu dotarcia do tego pola Funkcja nie zwraca żadnej wartości, wpisuje wartości do istniejącej tablicy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{algorytm_b_f_8h_a95cce933a2901a9d107f7d36a4fad52a}{sprawdz\+Wszystkich\+Sasiadow}} (int $\ast$\&mapa, int indeks, int $\ast$\&tabela\+Kosztow, int $\ast$\&tabela\+Polaczen, \mbox{\hyperlink{structparametry_mapy}{parametry\+Mapy}} PM)
+\begin{DoxyCompactList}\small\item\em Funkcja sprawdzająca otoczenie punktu na mapie. \end{DoxyCompactList}\item 
+int $\ast$ \mbox{\hyperlink{algorytm_b_f_8h_ab08d505c30a4ff7253522702af5ac5cf}{bellmano\+Ford}} (\mbox{\hyperlink{structparametry_mapy}{parametry\+Mapy}} PM, int $\ast$mapa, int rozmiar, \mbox{\hyperlink{struct_s_a_m}{SAM}} sam)
+\begin{DoxyCompactList}\small\item\em Funkcja wytyczająca najkrótszą scieżkę \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Zmienne}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{algorytm_b_f_8h_aefcba2436e62e516a63bdad51613a2e5}{B}} =4
+\begin{DoxyCompactList}\small\item\em Zmienna B -\/ jej wartość to liczba sąsiadów sprawdzanych dla każdego pola ma mapie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Plik nagłówkowy modułu algorytm\+BF. 
+
+
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{algorytm_b_f_8h_ab08d505c30a4ff7253522702af5ac5cf}\label{algorytm_b_f_8h_ab08d505c30a4ff7253522702af5ac5cf}} 
+\index{algorytmBF.h@{algorytmBF.h}!bellmanoFord@{bellmanoFord}}
+\index{bellmanoFord@{bellmanoFord}!algorytmBF.h@{algorytmBF.h}}
+\doxysubsubsection{\texorpdfstring{bellmanoFord()}{bellmanoFord()}}
+{\footnotesize\ttfamily int $\ast$ bellmano\+Ford (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structparametry_mapy}{parametry\+Mapy}}}]{PM,  }\item[{int $\ast$}]{mapa,  }\item[{int}]{rozmiar,  }\item[{\mbox{\hyperlink{struct_s_a_m}{SAM}}}]{sam }\end{DoxyParamCaption})}
+
+
+
+Funkcja wytyczająca najkrótszą scieżkę 
+
+Jest to najważniejsza funkcja niezbędna do poprawnego funkcjonowania programu Funkcja tworzy tablicę kosztów dotarcia do poszczególnych pól na mapie i tablicę poprzedników o najmniejszym kosztem dotarcia do poszczególnych pól mapy Funkcja ma złożoność wykładniczą kwadratowo w zależności od zwiększających się wymiarów mapy pętla zawsze wykona się dwa razy ilość pól na mapie 
+\begin{DoxyParams}{Parametry}
+{\em PM} & struktura zawierająca szerokość i wysokość mapy niezbędną do przyznania wartości każdemu z pól \\
+\hline
+{\em mapa} & jest to wskaźnik do jednowymiarowej tablicy indeksów zawierających punkty na mapie \\
+\hline
+{\em rozmiar} & jest to ilość wszystkich pól jakie są na mapie \\
+\hline
+{\em sam} & jest to struktura zawierająca indeks pola z którego zaczyna się ścieżka i indeks pola, na którym kończy się ścieżka \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+funkcja zwraca tablicę jednowymiarową zawierającą dla każdego indeksu tablicy indeks w polu wartość z którego do tego pola jest najmniejszy koszt dotarcia
+\end{DoxyReturn}
+
+
+Funkcja tworzy tablicę kosztóW i tablicę najkrótszych połączeń między punktami. Następnie przy użyciu funkcji sprawdz\+Wszystkich\+Sasiadow \begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{algorytm_b_f_8cpp_a95cce933a2901a9d107f7d36a4fad52a}{sprawdz\+Wszystkich\+Sasiadow(int $\ast$\&mapa, int indeks, int $\ast$\&tabela\+Kosztow, int $\ast$\&tabela\+Polaczen, parametry\+Mapy PM)}}; Aktualizuje w każdym kolejnym przejściu utworzone tablicę tak, że każdy punkt pod koniec działania funkcji ma swój koszt dotarcia od startu i wybranego sąsiada z którego do tego punktu można dojść najszybciej 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parametry}
+{\em PM} & struktura zawierająca szerokość i wysokość mapy niezbędną do przyznania wartości każdemu z pól \\
+\hline
+{\em mapa} & jest to wskaźnik do jednowymiarowej tablicy indeksów zawierających punkty na mapie \\
+\hline
+{\em rozmiar} & jest to ilość wszystkich pól jakie są na mapie \\
+\hline
+{\em sam} & jest to struktura zawierająca indeks pola z którego zaczyna się ścieżka i indeks pola, na którym kończy się ścieżka \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+funkcja zwraca tablicę jednowymiarową zawierającą dla każdego indeksu tablicy indeks w polu wartość z którego do tego pola jest najmniejszy koszt dotarcia 
+\end{DoxyReturn}
+\mbox{\Hypertarget{algorytm_b_f_8h_a95cce933a2901a9d107f7d36a4fad52a}\label{algorytm_b_f_8h_a95cce933a2901a9d107f7d36a4fad52a}} 
+\index{algorytmBF.h@{algorytmBF.h}!sprawdzWszystkichSasiadow@{sprawdzWszystkichSasiadow}}
+\index{sprawdzWszystkichSasiadow@{sprawdzWszystkichSasiadow}!algorytmBF.h@{algorytmBF.h}}
+\doxysubsubsection{\texorpdfstring{sprawdzWszystkichSasiadow()}{sprawdzWszystkichSasiadow()}}
+{\footnotesize\ttfamily void sprawdz\+Wszystkich\+Sasiadow (\begin{DoxyParamCaption}\item[{int $\ast$\&}]{mapa,  }\item[{int}]{indeks,  }\item[{int $\ast$\&}]{tabela\+Kosztow,  }\item[{int $\ast$\&}]{tabela\+Polaczen,  }\item[{\mbox{\hyperlink{structparametry_mapy}{parametry\+Mapy}}}]{PM }\end{DoxyParamCaption})}
+
+
+
+Funkcja sprawdzająca otoczenie punktu na mapie. 
+
+Funkcja jest niezbędna do poprawnego funkcjonowania algorytmu wyszukiwania scieżki Sprawdza dla każdego pola na mapie najbliższych sąsiadów każdego pola i przypisuje im wagę dotarcia do tego pola z poprzedniego pola Za każdym przejściem pętli aktualizuje parametry danego pola zmieniając jej sąsiada jeśli dotarcie do niego ma mniejszy koszt niż poprzednia konfiguracja Weryfikuje też pola będące przeszkodami i przypisuje im adekwatne wartości tj. bardzo wysokie koszty dotarcia niemożliwe do spełnienia 
+\begin{DoxyParams}{Parametry}
+{\em mapa} & jest to wskaźnik do jednowymiarowej tablicy indeksów zawierających punkty na mapie \\
+\hline
+{\em indeks} & jest indeksem pola dla którego w danym przejściu pętli sprawdzana jest sytuacja z sąsiadami tego punktu \\
+\hline
+{\em tabela\+Kosztow} & jest to wskaźnik do tablicy jednowymiarowej w której zostaną zapisane wartości wag odpowiednie dla poszczególnych punktów \\
+\hline
+{\em tabela\+Polaczen} & jest to wskaźnik do tablicy jednowymiarowej w której zostaną zapisane wartości indeksów odpowiednie dla poszczególnych punktów \\
+\hline
+{\em PM} & struktura zawierająca szerokość i wysokość mapy niezbędną do przyznania wartości każdemu z pól\\
+\hline
+\end{DoxyParams}
+
+
+Funkcja dla każdego punktu sprawdza sąsiadów wprowadzonego punktu W pierwszej kolejności sprawdza czy sąsiedzi istnieją tzn. czy współrzędne sąsiadów nie wykraczają poza wymiary mapy Jeśli sąsiad mieści się w granicach mapy to jest dopisywany jako kraniec krawędzi, a jego koszt dotarcia jest o jeden większy od pola, z którego sprawdzany jest dany sąsiad. Następnie sprawdzane jest czy pole nie jest przeszkodą, jeśli nie to w przypadku kiedy ścieżka przeprowadzona przez tego sąsiada jest mniejsza niż ta zawarta w tabeli kosztów i połączeń to dane są aktualizowane 
+\begin{DoxyParams}{Parametry}
+{\em mapa} & jest to wskaźnik do jednowymiarowej tablicy indeksów zawierających punkty na mapie \\
+\hline
+{\em indeks} & jest indeksem pola dla którego w danym przejściu pętli sprawdzana jest sytuacja z sąsiadami tego punktu \\
+\hline
+{\em tabela\+Kosztow} & jest to wskaźnik do tablicy jednowymiarowej w której zostaną zapisane wartości wag odpowiednie dla poszczególnych punktów \\
+\hline
+{\em tabela\+Polaczen} & jest to wskaźnik do tablicy jednowymiarowej w której zostaną zapisane wartości indeksów odpowiednie dla poszczególnych punktów \\
+\hline
+{\em PM} & struktura zawierająca szerokość i wysokość mapy niezbędną do przyznania wartości każdemu z pól \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{algorytm_b_f_8h_a496f925a65c652d38bb92a3b256c3249}\label{algorytm_b_f_8h_a496f925a65c652d38bb92a3b256c3249}} 
+\index{algorytmBF.h@{algorytmBF.h}!stworzTabeleNajkrotszychPolaczen@{stworzTabeleNajkrotszychPolaczen}}
+\index{stworzTabeleNajkrotszychPolaczen@{stworzTabeleNajkrotszychPolaczen}!algorytmBF.h@{algorytmBF.h}}
+\doxysubsubsection{\texorpdfstring{stworzTabeleNajkrotszychPolaczen()}{stworzTabeleNajkrotszychPolaczen()}}
+{\footnotesize\ttfamily void stworz\+Tabele\+Najkrotszych\+Polaczen (\begin{DoxyParamCaption}\item[{int $\ast$\&}]{tabela\+Polaczen,  }\item[{int}]{start,  }\item[{\mbox{\hyperlink{structparametry_mapy}{parametry\+Mapy}}}]{PM }\end{DoxyParamCaption})}
+
+
+
+Funkcja tworząca tablicę najkrótszych połączeń 
+
+Funkcja uzupełniająca tablicę wartością 0 dla pola wskazanego jako start co oznacza, że to pole jest swoim poprzednikiem/ nie ma poprzednika wartością -\/1 dla każdego pola, ponieważ przy deklaracji tablicy połączeń jeszcze nie wiadomo jakie są koszty dotarcia do poszczególnych pól Funkcja nie zwraca żadnej wartości, wpisuje wartości do już istniejącej tablicy 
+\begin{DoxyParams}{Parametry}
+{\em tabela\+Polaczen} & jest to wskaźnik do tablicy jednowymiarowej w której zostaną zapisane wartości indeksów odpowiednie dla poszczególnych punktów \\
+\hline
+{\em start} & to pole, które zostaję uznane przez program za pole które nie ma poprzedników i przypisana zostaje mu wartość 0 \\
+\hline
+{\em PM} & struktura zawierająca szerokość i wysokość mapy niezbędną do przyznania wartości każdemu z pól\\
+\hline
+\end{DoxyParams}
+
+
+Funkcja przyjmuje tablicę jednowymiarową i dla każdego pola na mapie poza polem, które jest określone jako start przypisuje wartość -\/1, a dla indeksu, który jest indeksem start przypisuje wartość zero 
+\begin{DoxyParams}{Parametry}
+{\em tabela\+Polaczen} & jest to wskaźnik do tablicy jednowymiarowej w której zostaną zapisane wartości indeksów odpowiednie dla poszczególnych punktów \\
+\hline
+{\em start} & to pole, które zostaję uznane przez program za pole które nie ma poprzedników i przypisana zostaje mu wartość 0 \\
+\hline
+{\em PM} & struktura zawierająca szerokość i wysokość mapy niezbędną do przyznania wartości każdemu z pól \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{algorytm_b_f_8h_a38a9124d8f094c4ba38f5216585a8bc6}\label{algorytm_b_f_8h_a38a9124d8f094c4ba38f5216585a8bc6}} 
+\index{algorytmBF.h@{algorytmBF.h}!stworzTabliceKosztow@{stworzTabliceKosztow}}
+\index{stworzTabliceKosztow@{stworzTabliceKosztow}!algorytmBF.h@{algorytmBF.h}}
+\doxysubsubsection{\texorpdfstring{stworzTabliceKosztow()}{stworzTabliceKosztow()}}
+{\footnotesize\ttfamily void stworz\+Tablice\+Kosztow (\begin{DoxyParamCaption}\item[{int $\ast$\&}]{tabela\+Kosztow,  }\item[{int}]{start,  }\item[{\mbox{\hyperlink{structparametry_mapy}{parametry\+Mapy}}}]{PM }\end{DoxyParamCaption})}
+
+
+
+Funkcja tworząca tablicę kosztów dotarcia do celu Funkcja uzupełniająca tablicę wartością 0 dla pola wskazanego jako start co oznacza, że koszt dotarcia do pola, z którego się zaczyna jest równy zero Dla każdego innego pola na mapie zostaje przypisana wartość nie możliwa do osiągnięcia czyli kwadrat rozmiaru całej mapy jako domyślna wartość kosztu dotarcia do tego pola Funkcja nie zwraca żadnej wartości, wpisuje wartości do istniejącej tablicy. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em tabela\+Kosztow} & jest to wskaźnik do tablicy jednowymiarowej w której zostaną zapisane wartości wag odpowiednie dla poszczególnych punktów \\
+\hline
+{\em start} & to pole, które zostaję uznane przez program za pole które nie ma poprzedników i przypisana zostaje mu wartość 0 \\
+\hline
+{\em PM} & struktura zawierająca szerokość i wysokość mapy niezbędną do przyznania wartości każdemu z pól\\
+\hline
+\end{DoxyParams}
+Funkcja tworząca tablicę kosztów dotarcia do celu Funkcja uzupełniająca tablicę wartością 0 dla pola wskazanego jako start co oznacza, że koszt dotarcia do pola, z którego się zaczyna jest równy zero Dla każdego innego pola na mapie zostaje przypisana wartość nie możliwa do osiągnięcia czyli kwadrat rozmiaru całej mapy jako domyślna wartość kosztu dotarcia do tego pola Funkcja nie zwraca żadnej wartości, wpisuje wartości do istniejącej tablicy.
+
+Funkcja przyjmuję tablicę jednowymiarową i dla każdego pola na mapie poza polem, które jest określone jako start przypisuje wartość która jest kwadratem ilości wszystkich pól znajdujących się na mapie 
+\begin{DoxyParams}{Parametry}
+{\em tabela\+Kosztow} & jest to wskaźnik do tablicy jednowymiarowej w której zostaną zapisane wartości wag odpowiednie dla poszczególnych punktów \\
+\hline
+{\em start} & to pole, które zostaję uznane przez program za pole które nie ma poprzedników i przypisana zostaje mu wartość 0 \\
+\hline
+{\em PM} & struktura zawierająca szerokość i wysokość mapy niezbędną do przyznania wartości każdemu z pól \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{algorytm_b_f_8h_abd257517caa7b01e98dc4e92386a2969}\label{algorytm_b_f_8h_abd257517caa7b01e98dc4e92386a2969}} 
+\index{algorytmBF.h@{algorytmBF.h}!znajdzIndeksPunktu@{znajdzIndeksPunktu}}
+\index{znajdzIndeksPunktu@{znajdzIndeksPunktu}!algorytmBF.h@{algorytmBF.h}}
+\doxysubsubsection{\texorpdfstring{znajdzIndeksPunktu()}{znajdzIndeksPunktu()}}
+{\footnotesize\ttfamily int znajdz\+Indeks\+Punktu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structparametry_mapy}{parametry\+Mapy}}}]{PM,  }\item[{int}]{X,  }\item[{int}]{Y }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracająca indeks pola na mapie. 
+
+Funkcja na podstawie wymiarów mapy oraz na podstawie koordynatów ustala indeks pola na mapie (warto tu nadmienić że mapa przechowywana jest jako tablica jednowymiarowa a wyświetlana jako dwuwymiarowa) 
+\begin{DoxyParams}{Parametry}
+{\em PM} & struktura zawierająca szerokosc i wysokosc mapy niezbędną do wyznaczenia indeksu pola \\
+\hline
+{\em X} & współrzędna w płaszczyźnie poziomej pola na mapie \\
+\hline
+{\em Y} & współrzędna w płaszczyźnie pionowej pola na mapie \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+indeks punktu (X,Y)
+\end{DoxyReturn}
+
+
+Funkcja przyjmuje parametry związane z wielkością mapy mnoży szerokość ze współrzędną X i dodaje współrzędną Y 
+\begin{DoxyParams}{Parametry}
+{\em PM} & struktura zawierająca szerokosc i wysokosc mapy niezbędną do wyznaczenia indeksu pola \\
+\hline
+{\em X} & współrzędna w płaszczyźnie poziomej pola na mapie \\
+\hline
+{\em Y} & współrzędna w płaszczyźnie pionowej pola na mapie \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+indeks punktu (X,Y) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{algorytm_b_f_8h_a965e79f6cda1e7c6a7b3f4c55de69110}\label{algorytm_b_f_8h_a965e79f6cda1e7c6a7b3f4c55de69110}} 
+\index{algorytmBF.h@{algorytmBF.h}!znajdzWspolrzednePunktu@{znajdzWspolrzednePunktu}}
+\index{znajdzWspolrzednePunktu@{znajdzWspolrzednePunktu}!algorytmBF.h@{algorytmBF.h}}
+\doxysubsubsection{\texorpdfstring{znajdzWspolrzednePunktu()}{znajdzWspolrzednePunktu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_punkt}{Punkt}} znajdz\+Wspolrzedne\+Punktu (\begin{DoxyParamCaption}\item[{int}]{indeks,  }\item[{\mbox{\hyperlink{structparametry_mapy}{parametry\+Mapy}}}]{PM }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracająca współrzędne punktu na mapie. 
+
+Funkcja na podstawie wymiaróW mapy oraz na podstawie indeksu pola ustala współrzędne X i Y jednoznacznie identyfikujące położenie pola 
+\begin{DoxyParams}{Parametry}
+{\em indeks} & to indeks na którym znajduje się punkt w tablicy jednowymiarowej zawierającej mapę \\
+\hline
+{\em PM} & struktura zawierająca szerokosc i wysokosc mapy niezbędną do wyznaczenia współrzędnych pola \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+\mbox{\hyperlink{struct_punkt}{Punkt}} struktura zawierająca współrzędne X i Y pola na mapie
+\end{DoxyReturn}
+Funkcja zwracająca współrzędne punktu na mapie.
+
+
+\begin{DoxyParams}{Parametry}
+{\em indeks} & to indeks na którym znajduje się punkt w tablicy jednowymiarowej zawierającej mapę \\
+\hline
+{\em PM} & struktura zawierająca szerokosc i wysokosc mapy niezbędną do wyznaczenia współrzędnych pola \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+\mbox{\hyperlink{struct_punkt}{Punkt}} struktura zawierająca współrzędne X i Y pola na mapie 
+\end{DoxyReturn}
+
+
+\doxysubsection{Dokumentacja zmiennych}
+\mbox{\Hypertarget{algorytm_b_f_8h_aefcba2436e62e516a63bdad51613a2e5}\label{algorytm_b_f_8h_aefcba2436e62e516a63bdad51613a2e5}} 
+\index{algorytmBF.h@{algorytmBF.h}!B@{B}}
+\index{B@{B}!algorytmBF.h@{algorytmBF.h}}
+\doxysubsubsection{\texorpdfstring{B}{B}}
+{\footnotesize\ttfamily const int B =4}
+
+
+
+Zmienna B -\/ jej wartość to liczba sąsiadów sprawdzanych dla każdego pola ma mapie. 
+

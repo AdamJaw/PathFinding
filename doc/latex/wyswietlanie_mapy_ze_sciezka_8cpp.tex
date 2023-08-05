@@ -1,0 +1,49 @@
+\hypertarget{wyswietlanie_mapy_ze_sciezka_8cpp}{}\doxysection{Dokumentacja pliku wersja\+Graficzna/wyswietlanie\+Mapy\+Ze\+Sciezka.cpp}
+\label{wyswietlanie_mapy_ze_sciezka_8cpp}\index{wersjaGraficzna/wyswietlanieMapyZeSciezka.cpp@{wersjaGraficzna/wyswietlanieMapyZeSciezka.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}wyswietlanie\+Mapy\+Ze\+Sciezka.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}tworzenie\+Mapy.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}odnajdywanie\+Sciezki.\+h\char`\"{}}\newline
+Wykres zależności załączania dla wyswietlanie\+Mapy\+Ze\+Sciezka.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{wyswietlanie_mapy_ze_sciezka_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \mbox{\hyperlink{wyswietlanie_mapy_ze_sciezka_8cpp_a6dfeff6d092eb3b9f5d235542004b87e}{pokaz\+Sciezke}} (\mbox{\hyperlink{struct_s_i_r}{SIR}} sciezka, int $\ast$mapa, \mbox{\hyperlink{structparametry_mapy}{parametry\+Mapy}} PM)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracająca mapę z wytyczoną ścieżką \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{wyswietlanie_mapy_ze_sciezka_8cpp_a6dfeff6d092eb3b9f5d235542004b87e}\label{wyswietlanie_mapy_ze_sciezka_8cpp_a6dfeff6d092eb3b9f5d235542004b87e}} 
+\index{wyswietlanieMapyZeSciezka.cpp@{wyswietlanieMapyZeSciezka.cpp}!pokazSciezke@{pokazSciezke}}
+\index{pokazSciezke@{pokazSciezke}!wyswietlanieMapyZeSciezka.cpp@{wyswietlanieMapyZeSciezka.cpp}}
+\doxysubsubsection{\texorpdfstring{pokazSciezke()}{pokazSciezke()}}
+{\footnotesize\ttfamily char $\ast$ pokaz\+Sciezke (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_i_r}{SIR}}}]{sciezka,  }\item[{int $\ast$}]{mapa,  }\item[{\mbox{\hyperlink{structparametry_mapy}{parametry\+Mapy}}}]{PM }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracająca mapę z wytyczoną ścieżką 
+
+Funkcja tworzy tablicę znaków o rozmiarze takim jak ilość elementów z pliku tekstowego i przypisuje znak (\#) polom, które mają w wartości zero-\/jedynkowej mapy wartość 1, a (.) tym, które są reprezentowane przez wartość 0. Następnie nanosi na tak utworzoną mapę znaki ($\ast$), które reprezentują wytyczoną ścieżkę \begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{tworzenie_mapy_8cpp_abca606022b7fb3f9dc95ff0a03a75da4}{stworz\+Mape(parametry\+Mapy PM)}} 
+
+\mbox{\hyperlink{wyswietlanie_mapy_ze_sciezka_8cpp_a6dfeff6d092eb3b9f5d235542004b87e}{pokaz\+Sciezke(\+SIR sciezka,int $\ast$mapa, parametry\+Mapy PM)}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parametry}
+{\em sciezka} & jest to struktura zawierająca tablicę dynamiczną indeksów pól zawartych w ścieżce i rozmiar tej tablicy \\
+\hline
+{\em mapa} & to wskaźnik do jednowymiarowej tablicy dynamicznej przechowującej zero-\/jedynkową reprezentację mapy \\
+\hline
+{\em PM} & to struktura zawierająca szerokość mapy, jej wysokość i nazwę pliku ją przechowującego \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Funkcja zwraca wskaźnik do tablicy znaków przechowującej mapę z wytyczoną ścieżką 
+\end{DoxyReturn}

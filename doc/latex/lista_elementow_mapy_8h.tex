@@ -1,0 +1,60 @@
+\hypertarget{lista_elementow_mapy_8h}{}\doxysection{Dokumentacja pliku wersja\+Graficzna/lista\+Elementow\+Mapy.h}
+\label{lista_elementow_mapy_8h}\index{wersjaGraficzna/listaElementowMapy.h@{wersjaGraficzna/listaElementowMapy.h}}
+
+
+Plik nagłówkowy modułu lista\+Elementow\+Mapy.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+Wykres zależności załączania dla lista\+Elementow\+Mapy.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{lista_elementow_mapy_8h__incl}
+\end{center}
+\end{figure}
+Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lista_elementow_mapy_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Komponenty}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_lista}{Lista}}
+\begin{DoxyCompactList}\small\item\em Element listy jednokierunkowej. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_lista}{Lista}} $\ast$ \mbox{\hyperlink{lista_elementow_mapy_8h_a46fbca2018ade602610ca7fe57204cc6}{lista\+Elementow\+ZPliku}} (std\+::string nazwa\+Pliku)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracająca liste elementów z pliku. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Plik nagłówkowy modułu lista\+Elementow\+Mapy. 
+
+
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{lista_elementow_mapy_8h_a46fbca2018ade602610ca7fe57204cc6}\label{lista_elementow_mapy_8h_a46fbca2018ade602610ca7fe57204cc6}} 
+\index{listaElementowMapy.h@{listaElementowMapy.h}!listaElementowZPliku@{listaElementowZPliku}}
+\index{listaElementowZPliku@{listaElementowZPliku}!listaElementowMapy.h@{listaElementowMapy.h}}
+\doxysubsubsection{\texorpdfstring{listaElementowZPliku()}{listaElementowZPliku()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_lista}{Lista}} $\ast$ lista\+Elementow\+ZPliku (\begin{DoxyParamCaption}\item[{std\+::string}]{nazwa\+Pliku }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracająca liste elementów z pliku. 
+
+Funkcja korzystając z pliku tekstowego, w którym zawarta jest mapa tworzy listę jednokierunkową, w której każdy kolejny element jest kolejnym polem na mapie zaczynając od tego z zerowym indeksem. \mbox{\hyperlink{struct_lista}{Lista}} zawiera informacje o tym czy na danym miejscu w pliku stoi przeszkodza czy jest to pole po którym można chodzić przy pomocy zapisania ich jako zero -\/ pole, jeden -\/ przeszkodza 
+\begin{DoxyParams}{Parametry}
+{\em nazwa\+Pliku} & to nazwa pliku, z którego pobierana jest aktualna mapa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Funkcja zwraca wskaźnik do listy jednokierunkowej zawierającej informacje o tym czy pole na mapie jest przeszkodą czy polem, po którym można się poruszać 
+\end{DoxyReturn}

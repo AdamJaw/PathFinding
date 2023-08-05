@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Wyszukiwanie najkrótszej ścieżki: Plik źródłowy wersjaGraficzna/mainwindow.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Wyszukiwanie najkrótszej ścieżki
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_3f52b42b2ed328bdd70ab2ed718c7f7e.html">wersjaGraficzna</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">mainwindow.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="mainwindow_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef MAINWINDOW_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define MAINWINDOW_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QMainWindow&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;QGraphicsView&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="odnajdywanie_sciezki_8h.html">odnajdywanieSciezki.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="tworzenie_mapy_8h.html">tworzenieMapy.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>QT_BEGIN_NAMESPACE</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="namespace_ui.html">   15</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_ui.html">Ui</a> { <span class="keyword">class </span><a class="code hl_class" href="class_main_window.html">MainWindow</a>;}</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>QT_END_NAMESPACE</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_main_window.html">   18</a></span><span class="keyword">class </span><a class="code hl_class" href="class_main_window.html">MainWindow</a> : <span class="keyword">public</span> QMainWindow</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    Q_OBJECT</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_class" href="class_main_window.html">MainWindow</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_function" href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">~MainWindow</a>();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_main_window.html#a335bcca774726c845700fc66a82f0e05">   26</a></span>    <span class="keywordtype">int</span> *<a class="code hl_variable" href="class_main_window.html#a335bcca774726c845700fc66a82f0e05">mapa</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_main_window.html#acb9a23b0ba0093bca44a650b5a20e7c2">   28</a></span>    <a class="code hl_struct" href="structparametry_mapy.html">parametryMapy</a> <a class="code hl_variable" href="class_main_window.html#acb9a23b0ba0093bca44a650b5a20e7c2">PM</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_main_window.html#a06968aebc42a16ab51c5888b4784075d">   30</a></span>    QString <a class="code hl_variable" href="class_main_window.html#a06968aebc42a16ab51c5888b4784075d">fileName</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_main_window.html#acc571d4d0f1bc2962341ac5efc007c58">   32</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_main_window.html#acc571d4d0f1bc2962341ac5efc007c58">m_flag</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_main_window.html#a3426fe83bf72beb54574cbd493606a1c">   34</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_main_window.html#a3426fe83bf72beb54574cbd493606a1c">m_flag2</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_main_window.html#a1e2105841b52b72a8823a6565a029f53">   36</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_main_window.html#a1e2105841b52b72a8823a6565a029f53">m_flag3</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_main_window.html#a288b4d4638486608e8aaa2a4def38cc2">   38</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_main_window.html#a288b4d4638486608e8aaa2a4def38cc2">m_flag4</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_main_window.html#aba4e5462fc9d5d9e6be4d0b76a71dfd3">   40</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_main_window.html#aba4e5462fc9d5d9e6be4d0b76a71dfd3">start</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_main_window.html#adbb2d7bbe67a2a5b769ade1e02bed04f">   42</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_main_window.html#adbb2d7bbe67a2a5b769ade1e02bed04f">meta</a>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="class_main_window.html#a9ddf8ea2918bff43016335dfba45c23d">   44</a></span>    <span class="keywordtype">int</span> *<a class="code hl_variable" href="class_main_window.html#a9ddf8ea2918bff43016335dfba45c23d">TP</a>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_main_window.html#a36c3efaf0b690c299248412d531fa49c">   46</a></span>    <a class="code hl_struct" href="struct_s_i_r.html">SIR</a> <a class="code hl_variable" href="class_main_window.html#a36c3efaf0b690c299248412d531fa49c">sciezka</a>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_main_window.html#a40ee227cdfa6df8e58d0c0261d28a193">   48</a></span>    <span class="keywordtype">char</span> *<a class="code hl_variable" href="class_main_window.html#a40ee227cdfa6df8e58d0c0261d28a193">Tsciezka</a>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">private</span> slots:</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">void</span> paintEvent(QPaintEvent*);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">void</span> mouseDoubleClickEvent(QMouseEvent *event);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordtype">void</span> on_pushButton_1_clicked();</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordtype">void</span> on_pushButton_2_clicked();</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordtype">void</span> on_pushButton_3_clicked();</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordtype">void</span> on_pushButton_4_clicked();</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    Ui::MainWindow *ui;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>};</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="preprocessor">#endif </span><span class="comment">// MAINWINDOW_H</span></div>
+<div class="ttc" id="aclass_main_window_html"><div class="ttname"><a href="class_main_window.html">MainWindow</a></div><div class="ttdef"><b>Definition:</b> mainwindow.h:19</div></div>
+<div class="ttc" id="aclass_main_window_html_a06968aebc42a16ab51c5888b4784075d"><div class="ttname"><a href="class_main_window.html#a06968aebc42a16ab51c5888b4784075d">MainWindow::fileName</a></div><div class="ttdeci">QString fileName</div><div class="ttdef"><b>Definition:</b> mainwindow.h:30</div></div>
+<div class="ttc" id="aclass_main_window_html_a1e2105841b52b72a8823a6565a029f53"><div class="ttname"><a href="class_main_window.html#a1e2105841b52b72a8823a6565a029f53">MainWindow::m_flag3</a></div><div class="ttdeci">bool m_flag3</div><div class="ttdoc">Zmienna odpowiedzialna za to, czy pewne zdarzenie miało miejsce i czy dana sytuacja programu musi zos...</div><div class="ttdef"><b>Definition:</b> mainwindow.h:36</div></div>
+<div class="ttc" id="aclass_main_window_html_a288b4d4638486608e8aaa2a4def38cc2"><div class="ttname"><a href="class_main_window.html#a288b4d4638486608e8aaa2a4def38cc2">MainWindow::m_flag4</a></div><div class="ttdeci">bool m_flag4</div><div class="ttdoc">Zmienna odpowiedzialna za to, czy pewne zdarzenie miało miejsce i czy dana sytuacja programu musi zos...</div><div class="ttdef"><b>Definition:</b> mainwindow.h:38</div></div>
+<div class="ttc" id="aclass_main_window_html_a335bcca774726c845700fc66a82f0e05"><div class="ttname"><a href="class_main_window.html#a335bcca774726c845700fc66a82f0e05">MainWindow::mapa</a></div><div class="ttdeci">int * mapa</div><div class="ttdoc">Wskaźnik przechowujący zero-jedynkowe wartości odpowiadające za to czy pole jest przeszkodą czy zwykł...</div><div class="ttdef"><b>Definition:</b> mainwindow.h:26</div></div>
+<div class="ttc" id="aclass_main_window_html_a3426fe83bf72beb54574cbd493606a1c"><div class="ttname"><a href="class_main_window.html#a3426fe83bf72beb54574cbd493606a1c">MainWindow::m_flag2</a></div><div class="ttdeci">bool m_flag2</div><div class="ttdoc">Zmienna odpowiedzialna za to, czy pewne zdarzenie miało miejsce i czy dana sytuacja programu musi zos...</div><div class="ttdef"><b>Definition:</b> mainwindow.h:34</div></div>
+<div class="ttc" id="aclass_main_window_html_a36c3efaf0b690c299248412d531fa49c"><div class="ttname"><a href="class_main_window.html#a36c3efaf0b690c299248412d531fa49c">MainWindow::sciezka</a></div><div class="ttdeci">SIR sciezka</div><div class="ttdef"><b>Definition:</b> mainwindow.h:46</div></div>
+<div class="ttc" id="aclass_main_window_html_a40ee227cdfa6df8e58d0c0261d28a193"><div class="ttname"><a href="class_main_window.html#a40ee227cdfa6df8e58d0c0261d28a193">MainWindow::Tsciezka</a></div><div class="ttdeci">char * Tsciezka</div><div class="ttdef"><b>Definition:</b> mainwindow.h:48</div></div>
+<div class="ttc" id="aclass_main_window_html_a9ddf8ea2918bff43016335dfba45c23d"><div class="ttname"><a href="class_main_window.html#a9ddf8ea2918bff43016335dfba45c23d">MainWindow::TP</a></div><div class="ttdeci">int * TP</div><div class="ttdef"><b>Definition:</b> mainwindow.h:44</div></div>
+<div class="ttc" id="aclass_main_window_html_aba4e5462fc9d5d9e6be4d0b76a71dfd3"><div class="ttname"><a href="class_main_window.html#aba4e5462fc9d5d9e6be4d0b76a71dfd3">MainWindow::start</a></div><div class="ttdeci">int start</div><div class="ttdoc">Zmienna przechowująca indeks pola, z którego zaczyna się ścieżka.</div><div class="ttdef"><b>Definition:</b> mainwindow.h:40</div></div>
+<div class="ttc" id="aclass_main_window_html_acb9a23b0ba0093bca44a650b5a20e7c2"><div class="ttname"><a href="class_main_window.html#acb9a23b0ba0093bca44a650b5a20e7c2">MainWindow::PM</a></div><div class="ttdeci">parametryMapy PM</div><div class="ttdoc">W tej zmiennej zawarte są informacje o szerokości i długości mapy, a także o nazwie samej mapy.</div><div class="ttdef"><b>Definition:</b> mainwindow.h:28</div></div>
+<div class="ttc" id="aclass_main_window_html_acc571d4d0f1bc2962341ac5efc007c58"><div class="ttname"><a href="class_main_window.html#acc571d4d0f1bc2962341ac5efc007c58">MainWindow::m_flag</a></div><div class="ttdeci">bool m_flag</div><div class="ttdoc">Zmienna odpowiedzialna za to, czy pewne zdarzenie miało miejsce i czy dana sytuacja programu musi zos...</div><div class="ttdef"><b>Definition:</b> mainwindow.h:32</div></div>
+<div class="ttc" id="aclass_main_window_html_adbb2d7bbe67a2a5b769ade1e02bed04f"><div class="ttname"><a href="class_main_window.html#adbb2d7bbe67a2a5b769ade1e02bed04f">MainWindow::meta</a></div><div class="ttdeci">int meta</div><div class="ttdoc">Zmienna przechowująca indeks pola, na którym kończy się ścieżka.</div><div class="ttdef"><b>Definition:</b> mainwindow.h:42</div></div>
+<div class="ttc" id="aclass_main_window_html_ae98d00a93bc118200eeef9f9bba1dba7"><div class="ttname"><a href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">MainWindow::~MainWindow</a></div><div class="ttdeci">~MainWindow()</div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:28</div></div>
+<div class="ttc" id="anamespace_ui_html"><div class="ttname"><a href="namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> mainwindow.h:15</div></div>
+<div class="ttc" id="aodnajdywanie_sciezki_8h_html"><div class="ttname"><a href="odnajdywanie_sciezki_8h.html">odnajdywanieSciezki.h</a></div><div class="ttdoc">Plik nagłówkowy modułu odnajdywanieSciezki.</div></div>
+<div class="ttc" id="astruct_s_i_r_html"><div class="ttname"><a href="struct_s_i_r.html">SIR</a></div><div class="ttdoc">Struktura zawierająca scieżkę</div><div class="ttdef"><b>Definition:</b> odnajdywanieSciezki.h:12</div></div>
+<div class="ttc" id="astructparametry_mapy_html"><div class="ttname"><a href="structparametry_mapy.html">parametryMapy</a></div><div class="ttdoc">Struktura zawierająca parametry mapy.</div><div class="ttdef"><b>Definition:</b> tworzenieMapy.h:13</div></div>
+<div class="ttc" id="atworzenie_mapy_8h_html"><div class="ttname"><a href="tworzenie_mapy_8h.html">tworzenieMapy.h</a></div><div class="ttdoc">Plik nagłówkowy modułu tworzenieMapy.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

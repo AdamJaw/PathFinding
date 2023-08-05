@@ -1,0 +1,40 @@
+\hypertarget{algorytm_b_f_8h_source}{}\doxysection{algorytm\+BF.\+h}
+\label{algorytm_b_f_8h_source}\index{wersjaGraficzna/algorytmBF.h@{wersjaGraficzna/algorytmBF.h}}
+\mbox{\hyperlink{algorytm_b_f_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ALGORYTMBF\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ALGORYTMBF\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{tworzenie_mapy_8h}{tworzenieMapy.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{algorytm_b_f_8h_aefcba2436e62e516a63bdad51613a2e5}{B}}=4;}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_punkt}{Punkt}}\{}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_punkt_ae92f91940c91b74cb6933af2becda556}{X}};}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_punkt_ad5e53d4fc86fd0b3a8eee7e6c0c879f6}{Y}};}
+\DoxyCodeLine{00021\ \};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_krawedz}{Krawedz}}\{}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_krawedz_ae7656d1b109047a24de64029783184c0}{skad}};}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_krawedz_ac13ad7af8c503af432eea61e752389df}{dokad}};}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_krawedz_acb2ee7047d5b98f6bb3ad6a72fde581e}{waga}};}
+\DoxyCodeLine{00035\ \};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_s_a_m}{SAM}}\{}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_s_a_m_a70fe48a923118a02391b820f31334c3f}{S}};}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_s_a_m_ab4fcb6ca6e75633383540416fb98da37}{M}};}
+\DoxyCodeLine{00048\ \};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00060\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{algorytm_b_f_8h_abd257517caa7b01e98dc4e92386a2969}{znajdzIndeksPunktu}}(\mbox{\hyperlink{structparametry_mapy}{parametryMapy}}\ PM,\ \textcolor{keywordtype}{int}\ X,\ \textcolor{keywordtype}{int}\ Y);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00070\ \mbox{\hyperlink{struct_punkt}{Punkt}}\ \mbox{\hyperlink{algorytm_b_f_8h_a965e79f6cda1e7c6a7b3f4c55de69110}{znajdzWspolrzednePunktu}}(\textcolor{keywordtype}{int}\ indeks,\ \mbox{\hyperlink{structparametry_mapy}{parametryMapy}}\ PM);}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00081\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{algorytm_b_f_8h_a496f925a65c652d38bb92a3b256c3249}{stworzTabeleNajkrotszychPolaczen}}(\textcolor{keywordtype}{int}\ *\&tabelaPolaczen,\textcolor{keywordtype}{int}\ start,\mbox{\hyperlink{structparametry_mapy}{parametryMapy}}\ PM);}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00091\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{algorytm_b_f_8h_a38a9124d8f094c4ba38f5216585a8bc6}{stworzTabliceKosztow}}(\textcolor{keywordtype}{int}\ *\&tabelaKosztow,\textcolor{keywordtype}{int}\ start,\mbox{\hyperlink{structparametry_mapy}{parametryMapy}}\ PM);}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00105\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{algorytm_b_f_8h_a95cce933a2901a9d107f7d36a4fad52a}{sprawdzWszystkichSasiadow}}(\textcolor{keywordtype}{int}\ *\&mapa,\ \textcolor{keywordtype}{int}\ indeks,\ \textcolor{keywordtype}{int}\ *\&tabelaKosztow,\ \textcolor{keywordtype}{int}\ *\&tabelaPolaczen,\ \mbox{\hyperlink{structparametry_mapy}{parametryMapy}}\ PM);}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00118\ \textcolor{keywordtype}{int}\ *\mbox{\hyperlink{algorytm_b_f_8h_ab08d505c30a4ff7253522702af5ac5cf}{bellmanoFord}}(\mbox{\hyperlink{structparametry_mapy}{parametryMapy}}\ PM,\ \textcolor{keywordtype}{int}\ *mapa,\ \textcolor{keywordtype}{int}\ rozmiar,\mbox{\hyperlink{struct_s_a_m}{SAM}}\ sam);}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00120\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ALGORYTMBF\_H}}
+
+\end{DoxyCode}

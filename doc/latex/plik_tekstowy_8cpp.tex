@@ -1,0 +1,66 @@
+\hypertarget{plik_tekstowy_8cpp}{}\doxysection{Dokumentacja pliku wersja\+Graficzna/plik\+Tekstowy.cpp}
+\label{plik_tekstowy_8cpp}\index{wersjaGraficzna/plikTekstowy.cpp@{wersjaGraficzna/plikTekstowy.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}plik\+Tekstowy.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}tworzenie\+Mapy.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}odnajdywanie\+Sciezki.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}algorytm\+BF.\+h\char`\"{}}\newline
+Wykres zależności załączania dla plik\+Tekstowy.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{plik_tekstowy_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{plik_tekstowy_8cpp_a04e040390ea713132906df60d76e7af6}{Sprawdz\+Czy\+Zawartosc\+Pliku\+Poprawna}} (string nazwa\+Mapy)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracająca wartość true/false czy plik jest poprawny. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{plik_tekstowy_8cpp_a7b28502ccfd4764f500ea695e1dd6151}{Zapisz\+Do\+Pliku}} (string nazwa\+Pliku, int $\ast$mapa, \mbox{\hyperlink{struct_s_i_r}{SIR}} sciezka, \mbox{\hyperlink{structparametry_mapy}{parametry\+Mapy}} PM)
+\begin{DoxyCompactList}\small\item\em Funkcja zapisująca mapę i ścieżkę do pliku. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{plik_tekstowy_8cpp_a04e040390ea713132906df60d76e7af6}\label{plik_tekstowy_8cpp_a04e040390ea713132906df60d76e7af6}} 
+\index{plikTekstowy.cpp@{plikTekstowy.cpp}!SprawdzCzyZawartoscPlikuPoprawna@{SprawdzCzyZawartoscPlikuPoprawna}}
+\index{SprawdzCzyZawartoscPlikuPoprawna@{SprawdzCzyZawartoscPlikuPoprawna}!plikTekstowy.cpp@{plikTekstowy.cpp}}
+\doxysubsubsection{\texorpdfstring{SprawdzCzyZawartoscPlikuPoprawna()}{SprawdzCzyZawartoscPlikuPoprawna()}}
+{\footnotesize\ttfamily bool Sprawdz\+Czy\+Zawartosc\+Pliku\+Poprawna (\begin{DoxyParamCaption}\item[{string}]{nazwa\+Mapy }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracająca wartość true/false czy plik jest poprawny. 
+
+Funkcja sprawdza czy zawartość pliku spełnia wymogi przewidziane przez program czyli czy są w nim same zera i jedynki, a także czy każda z tych liczb jest oddzielona spacją. Jeśli założenia pliku nie będą spełnione funkcja zwróci wartość false. 
+\begin{DoxyParams}{Parametry}
+{\em nazwa\+Mapy} & to nazwa pliku, z którego pobierana jest aktualna mapa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Funkcja zwraca wartość true/false w zależności od tego czy plik spełnia wymogi programu, czy też nie można z niego wyznaczyć ścieżki 
+\end{DoxyReturn}
+\mbox{\Hypertarget{plik_tekstowy_8cpp_a7b28502ccfd4764f500ea695e1dd6151}\label{plik_tekstowy_8cpp_a7b28502ccfd4764f500ea695e1dd6151}} 
+\index{plikTekstowy.cpp@{plikTekstowy.cpp}!ZapiszDoPliku@{ZapiszDoPliku}}
+\index{ZapiszDoPliku@{ZapiszDoPliku}!plikTekstowy.cpp@{plikTekstowy.cpp}}
+\doxysubsubsection{\texorpdfstring{ZapiszDoPliku()}{ZapiszDoPliku()}}
+{\footnotesize\ttfamily void Zapisz\+Do\+Pliku (\begin{DoxyParamCaption}\item[{string}]{nazwa\+Pliku,  }\item[{int $\ast$}]{mapa,  }\item[{\mbox{\hyperlink{struct_s_i_r}{SIR}}}]{sciezka,  }\item[{\mbox{\hyperlink{structparametry_mapy}{parametry\+Mapy}}}]{PM }\end{DoxyParamCaption})}
+
+
+
+Funkcja zapisująca mapę i ścieżkę do pliku. 
+
+Funkcja zapisuje bieżącą mapę za pomocą zer i jedynek, a także zapisuje indeksy pól wchodzących w skład aktualnej ścieżki 
+\begin{DoxyParams}{Parametry}
+{\em nazwa\+Pliku} & to nazwa pliku, pod jaką scieżka z mapą mają zostać zapisane \\
+\hline
+{\em mapa} & plik przechowujący zero-\/jedynkową reprezentację mapy \\
+\hline
+{\em sciezka} & struktura przechowująca indeksy ścieżki za pomocą tablicy dynamicznej jednowymiarowej \\
+\hline
+{\em PM} & struktura przechowująca informacje o szerokości i długości mapy \\
+\hline
+\end{DoxyParams}

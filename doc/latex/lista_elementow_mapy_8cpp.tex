@@ -1,0 +1,40 @@
+\hypertarget{lista_elementow_mapy_8cpp}{}\doxysection{Dokumentacja pliku wersja\+Graficzna/lista\+Elementow\+Mapy.cpp}
+\label{lista_elementow_mapy_8cpp}\index{wersjaGraficzna/listaElementowMapy.cpp@{wersjaGraficzna/listaElementowMapy.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include \char`\"{}Lista\+Elementow\+Mapy.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}wymiary\+Mapy.\+h\char`\"{}}\newline
+Wykres zależności załączania dla lista\+Elementow\+Mapy.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lista_elementow_mapy_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_lista}{Lista}} $\ast$ \mbox{\hyperlink{lista_elementow_mapy_8cpp_a0ae9110177b66c492746a1dd880d3ff9}{lista\+Elementow\+ZPliku}} (string nazwa\+Pliku)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracająca liste elementów z pliku. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{lista_elementow_mapy_8cpp_a0ae9110177b66c492746a1dd880d3ff9}\label{lista_elementow_mapy_8cpp_a0ae9110177b66c492746a1dd880d3ff9}} 
+\index{listaElementowMapy.cpp@{listaElementowMapy.cpp}!listaElementowZPliku@{listaElementowZPliku}}
+\index{listaElementowZPliku@{listaElementowZPliku}!listaElementowMapy.cpp@{listaElementowMapy.cpp}}
+\doxysubsubsection{\texorpdfstring{listaElementowZPliku()}{listaElementowZPliku()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_lista}{Lista}} $\ast$ lista\+Elementow\+ZPliku (\begin{DoxyParamCaption}\item[{string}]{nazwa\+Pliku }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracająca liste elementów z pliku. 
+
+Funkcja pobiera wartości zero-\/jedynkowe z pliku tekstowego do momentu, aż nie napotka jego końca. Funkcja automatycznie uzupełnia mapę przeszkodami, aby powstała mapa, która w każdym wierszu ma tyle samo pól, licząc od najdłuższego wiersza zawartego w pliku 
+\begin{DoxyParams}{Parametry}
+{\em nazwa\+Pliku} & to nazwa pliku, z którego pobierana jest aktualna mapa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Funkcja zwraca wskaźnik do listy jednokierunkowej zawierającej informacje o tym czy pole na mapie jest przeszkodą czy polem, po którym można się poruszać 
+\end{DoxyReturn}

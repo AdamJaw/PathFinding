@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Wyszukiwanie najkrótszej ścieżki: Plik źródłowy wersjaGraficzna/algorytmBF.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Wyszukiwanie najkrótszej ścieżki
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_3f52b42b2ed328bdd70ab2ed718c7f7e.html">wersjaGraficzna</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">algorytmBF.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="algorytm_b_f_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef ALGORYTMBF_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define ALGORYTMBF_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="tworzenie_mapy_8h.html">tworzenieMapy.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="algorytm_b_f_8h.html#aefcba2436e62e516a63bdad51613a2e5">   10</a></span><span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="algorytm_b_f_8h.html#aefcba2436e62e516a63bdad51613a2e5">B</a>=4;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="struct_punkt.html">   16</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_punkt.html">Punkt</a>{</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="struct_punkt.html#ae92f91940c91b74cb6933af2becda556">   18</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_punkt.html#ae92f91940c91b74cb6933af2becda556">X</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="struct_punkt.html#ad5e53d4fc86fd0b3a8eee7e6c0c879f6">   20</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_punkt.html#ad5e53d4fc86fd0b3a8eee7e6c0c879f6">Y</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>};</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="struct_krawedz.html">   28</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_krawedz.html">Krawedz</a>{</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="struct_krawedz.html#ae7656d1b109047a24de64029783184c0">   30</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_krawedz.html#ae7656d1b109047a24de64029783184c0">skad</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="struct_krawedz.html#ac13ad7af8c503af432eea61e752389df">   32</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_krawedz.html#ac13ad7af8c503af432eea61e752389df">dokad</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="struct_krawedz.html#acb2ee7047d5b98f6bb3ad6a72fde581e">   34</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_krawedz.html#acb2ee7047d5b98f6bb3ad6a72fde581e">waga</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>};</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="struct_s_a_m.html">   43</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_s_a_m.html">SAM</a>{</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="struct_s_a_m.html#a70fe48a923118a02391b820f31334c3f">   45</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_s_a_m.html#a70fe48a923118a02391b820f31334c3f">S</a>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="struct_s_a_m.html#ab4fcb6ca6e75633383540416fb98da37">   47</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_s_a_m.html#ab4fcb6ca6e75633383540416fb98da37">M</a>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>};</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keywordtype">int</span> <a class="code hl_function" href="algorytm_b_f_8h.html#abd257517caa7b01e98dc4e92386a2969">znajdzIndeksPunktu</a>(<a class="code hl_struct" href="structparametry_mapy.html">parametryMapy</a> PM, <span class="keywordtype">int</span> X, <span class="keywordtype">int</span> Y);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><a class="code hl_struct" href="struct_punkt.html">Punkt</a> <a class="code hl_function" href="algorytm_b_f_8h.html#a965e79f6cda1e7c6a7b3f4c55de69110">znajdzWspolrzednePunktu</a>(<span class="keywordtype">int</span> indeks, <a class="code hl_struct" href="structparametry_mapy.html">parametryMapy</a> PM);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keywordtype">void</span> <a class="code hl_function" href="algorytm_b_f_8h.html#a496f925a65c652d38bb92a3b256c3249">stworzTabeleNajkrotszychPolaczen</a>(<span class="keywordtype">int</span> *&amp;tabelaPolaczen,<span class="keywordtype">int</span> start,<a class="code hl_struct" href="structparametry_mapy.html">parametryMapy</a> PM);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="keywordtype">void</span> <a class="code hl_function" href="algorytm_b_f_8h.html#a38a9124d8f094c4ba38f5216585a8bc6">stworzTabliceKosztow</a>(<span class="keywordtype">int</span> *&amp;tabelaKosztow,<span class="keywordtype">int</span> start,<a class="code hl_struct" href="structparametry_mapy.html">parametryMapy</a> PM);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="keywordtype">void</span> <a class="code hl_function" href="algorytm_b_f_8h.html#a95cce933a2901a9d107f7d36a4fad52a">sprawdzWszystkichSasiadow</a>(<span class="keywordtype">int</span> *&amp;mapa, <span class="keywordtype">int</span> indeks, <span class="keywordtype">int</span> *&amp;tabelaKosztow, <span class="keywordtype">int</span> *&amp;tabelaPolaczen, <a class="code hl_struct" href="structparametry_mapy.html">parametryMapy</a> PM);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="keywordtype">int</span> *<a class="code hl_function" href="algorytm_b_f_8h.html#ab08d505c30a4ff7253522702af5ac5cf">bellmanoFord</a>(<a class="code hl_struct" href="structparametry_mapy.html">parametryMapy</a> PM, <span class="keywordtype">int</span> *mapa, <span class="keywordtype">int</span> rozmiar,<a class="code hl_struct" href="struct_s_a_m.html">SAM</a> sam);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="preprocessor">#endif </span><span class="comment">// ALGORYTMBF_H</span></div>
+<div class="ttc" id="aalgorytm_b_f_8h_html_a38a9124d8f094c4ba38f5216585a8bc6"><div class="ttname"><a href="algorytm_b_f_8h.html#a38a9124d8f094c4ba38f5216585a8bc6">stworzTabliceKosztow</a></div><div class="ttdeci">void stworzTabliceKosztow(int *&amp;tabelaKosztow, int start, parametryMapy PM)</div><div class="ttdoc">Funkcja tworząca tablicę kosztów dotarcia do celu Funkcja uzupełniająca tablicę wartością 0 dla pola ...</div><div class="ttdef"><b>Definition:</b> algorytmBF.cpp:39</div></div>
+<div class="ttc" id="aalgorytm_b_f_8h_html_a496f925a65c652d38bb92a3b256c3249"><div class="ttname"><a href="algorytm_b_f_8h.html#a496f925a65c652d38bb92a3b256c3249">stworzTabeleNajkrotszychPolaczen</a></div><div class="ttdeci">void stworzTabeleNajkrotszychPolaczen(int *&amp;tabelaPolaczen, int start, parametryMapy PM)</div><div class="ttdoc">Funkcja tworząca tablicę najkrótszych połączeń</div><div class="ttdef"><b>Definition:</b> algorytmBF.cpp:54</div></div>
+<div class="ttc" id="aalgorytm_b_f_8h_html_a95cce933a2901a9d107f7d36a4fad52a"><div class="ttname"><a href="algorytm_b_f_8h.html#a95cce933a2901a9d107f7d36a4fad52a">sprawdzWszystkichSasiadow</a></div><div class="ttdeci">void sprawdzWszystkichSasiadow(int *&amp;mapa, int indeks, int *&amp;tabelaKosztow, int *&amp;tabelaPolaczen, parametryMapy PM)</div><div class="ttdoc">Funkcja sprawdzająca otoczenie punktu na mapie.</div><div class="ttdef"><b>Definition:</b> algorytmBF.cpp:74</div></div>
+<div class="ttc" id="aalgorytm_b_f_8h_html_a965e79f6cda1e7c6a7b3f4c55de69110"><div class="ttname"><a href="algorytm_b_f_8h.html#a965e79f6cda1e7c6a7b3f4c55de69110">znajdzWspolrzednePunktu</a></div><div class="ttdeci">Punkt znajdzWspolrzednePunktu(int indeks, parametryMapy PM)</div><div class="ttdoc">Funkcja zwracająca współrzędne punktu na mapie.</div><div class="ttdef"><b>Definition:</b> algorytmBF.cpp:25</div></div>
+<div class="ttc" id="aalgorytm_b_f_8h_html_ab08d505c30a4ff7253522702af5ac5cf"><div class="ttname"><a href="algorytm_b_f_8h.html#ab08d505c30a4ff7253522702af5ac5cf">bellmanoFord</a></div><div class="ttdeci">int * bellmanoFord(parametryMapy PM, int *mapa, int rozmiar, SAM sam)</div><div class="ttdoc">Funkcja wytyczająca najkrótszą scieżkę</div><div class="ttdef"><b>Definition:</b> algorytmBF.cpp:115</div></div>
+<div class="ttc" id="aalgorytm_b_f_8h_html_abd257517caa7b01e98dc4e92386a2969"><div class="ttname"><a href="algorytm_b_f_8h.html#abd257517caa7b01e98dc4e92386a2969">znajdzIndeksPunktu</a></div><div class="ttdeci">int znajdzIndeksPunktu(parametryMapy PM, int X, int Y)</div><div class="ttdoc">Funkcja zwracająca indeks pola na mapie.</div><div class="ttdef"><b>Definition:</b> algorytmBF.cpp:15</div></div>
+<div class="ttc" id="aalgorytm_b_f_8h_html_aefcba2436e62e516a63bdad51613a2e5"><div class="ttname"><a href="algorytm_b_f_8h.html#aefcba2436e62e516a63bdad51613a2e5">B</a></div><div class="ttdeci">const int B</div><div class="ttdoc">Zmienna B - jej wartość to liczba sąsiadów sprawdzanych dla każdego pola ma mapie.</div><div class="ttdef"><b>Definition:</b> algorytmBF.h:10</div></div>
+<div class="ttc" id="astruct_krawedz_html"><div class="ttname"><a href="struct_krawedz.html">Krawedz</a></div><div class="ttdoc">Krawędź łącząca pola na mapie.</div><div class="ttdef"><b>Definition:</b> algorytmBF.h:28</div></div>
+<div class="ttc" id="astruct_krawedz_html_ac13ad7af8c503af432eea61e752389df"><div class="ttname"><a href="struct_krawedz.html#ac13ad7af8c503af432eea61e752389df">Krawedz::dokad</a></div><div class="ttdeci">int dokad</div><div class="ttdoc">Indeks pola na które chcemy się udać</div><div class="ttdef"><b>Definition:</b> algorytmBF.h:32</div></div>
+<div class="ttc" id="astruct_krawedz_html_acb2ee7047d5b98f6bb3ad6a72fde581e"><div class="ttname"><a href="struct_krawedz.html#acb2ee7047d5b98f6bb3ad6a72fde581e">Krawedz::waga</a></div><div class="ttdeci">int waga</div><div class="ttdoc">Koszt jaki musimy przeznaczyć aby przemieścić się z jednego pola na drugie.</div><div class="ttdef"><b>Definition:</b> algorytmBF.h:34</div></div>
+<div class="ttc" id="astruct_krawedz_html_ae7656d1b109047a24de64029783184c0"><div class="ttname"><a href="struct_krawedz.html#ae7656d1b109047a24de64029783184c0">Krawedz::skad</a></div><div class="ttdeci">int skad</div><div class="ttdoc">Indeks pola z którego chcemy się przemieścić</div><div class="ttdef"><b>Definition:</b> algorytmBF.h:30</div></div>
+<div class="ttc" id="astruct_punkt_html"><div class="ttname"><a href="struct_punkt.html">Punkt</a></div><div class="ttdoc">Koordynaty punktu na mapie.</div><div class="ttdef"><b>Definition:</b> algorytmBF.h:16</div></div>
+<div class="ttc" id="astruct_punkt_html_ad5e53d4fc86fd0b3a8eee7e6c0c879f6"><div class="ttname"><a href="struct_punkt.html#ad5e53d4fc86fd0b3a8eee7e6c0c879f6">Punkt::Y</a></div><div class="ttdeci">int Y</div><div class="ttdoc">Współrzędna Y pola na mapie.</div><div class="ttdef"><b>Definition:</b> algorytmBF.h:20</div></div>
+<div class="ttc" id="astruct_punkt_html_ae92f91940c91b74cb6933af2becda556"><div class="ttname"><a href="struct_punkt.html#ae92f91940c91b74cb6933af2becda556">Punkt::X</a></div><div class="ttdeci">int X</div><div class="ttdoc">Współrzędna X pola na mapie.</div><div class="ttdef"><b>Definition:</b> algorytmBF.h:18</div></div>
+<div class="ttc" id="astruct_s_a_m_html"><div class="ttname"><a href="struct_s_a_m.html">SAM</a></div><div class="ttdoc">Struktura przechowująca start i metę</div><div class="ttdef"><b>Definition:</b> algorytmBF.h:43</div></div>
+<div class="ttc" id="astruct_s_a_m_html_a70fe48a923118a02391b820f31334c3f"><div class="ttname"><a href="struct_s_a_m.html#a70fe48a923118a02391b820f31334c3f">SAM::S</a></div><div class="ttdeci">int S</div><div class="ttdoc">Indeks pola z którego zaczyna się tworzyć ścieżka.</div><div class="ttdef"><b>Definition:</b> algorytmBF.h:45</div></div>
+<div class="ttc" id="astruct_s_a_m_html_ab4fcb6ca6e75633383540416fb98da37"><div class="ttname"><a href="struct_s_a_m.html#ab4fcb6ca6e75633383540416fb98da37">SAM::M</a></div><div class="ttdeci">int M</div><div class="ttdoc">Indeks pola na którym zakończy się ścieżka.</div><div class="ttdef"><b>Definition:</b> algorytmBF.h:47</div></div>
+<div class="ttc" id="astructparametry_mapy_html"><div class="ttname"><a href="structparametry_mapy.html">parametryMapy</a></div><div class="ttdoc">Struktura zawierająca parametry mapy.</div><div class="ttdef"><b>Definition:</b> tworzenieMapy.h:13</div></div>
+<div class="ttc" id="atworzenie_mapy_8h_html"><div class="ttname"><a href="tworzenie_mapy_8h.html">tworzenieMapy.h</a></div><div class="ttdoc">Plik nagłówkowy modułu tworzenieMapy.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

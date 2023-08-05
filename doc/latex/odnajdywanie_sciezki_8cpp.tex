@@ -1,0 +1,43 @@
+\hypertarget{odnajdywanie_sciezki_8cpp}{}\doxysection{Dokumentacja pliku wersja\+Graficzna/odnajdywanie\+Sciezki.cpp}
+\label{odnajdywanie_sciezki_8cpp}\index{wersjaGraficzna/odnajdywanieSciezki.cpp@{wersjaGraficzna/odnajdywanieSciezki.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}odnajdywanie\+Sciezki.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Lista\+Elementow\+Mapy.\+h\char`\"{}}\newline
+Wykres zależności załączania dla odnajdywanie\+Sciezki.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{odnajdywanie_sciezki_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_s_i_r}{SIR}} \mbox{\hyperlink{odnajdywanie_sciezki_8cpp_af6bbb3c2dc3d78f0794d05a98908d8b0}{stworz\+Sciezke}} (int $\ast$\&tablica\+Najkrotszych\+Polaczen, int start, int meta)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracająca ścieżkę dla poszczególnych pól start/meta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{odnajdywanie_sciezki_8cpp_af6bbb3c2dc3d78f0794d05a98908d8b0}\label{odnajdywanie_sciezki_8cpp_af6bbb3c2dc3d78f0794d05a98908d8b0}} 
+\index{odnajdywanieSciezki.cpp@{odnajdywanieSciezki.cpp}!stworzSciezke@{stworzSciezke}}
+\index{stworzSciezke@{stworzSciezke}!odnajdywanieSciezki.cpp@{odnajdywanieSciezki.cpp}}
+\doxysubsubsection{\texorpdfstring{stworzSciezke()}{stworzSciezke()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_i_r}{SIR}} stworz\+Sciezke (\begin{DoxyParamCaption}\item[{int $\ast$\&}]{tablica\+Najkrotszych\+Polaczen,  }\item[{int}]{start,  }\item[{int}]{meta }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracająca ścieżkę dla poszczególnych pól start/meta. 
+
+Funkcja przy użyciu tablicy poprzedników (pól o najmniejszych kosztach dotarcia z pola start) tworzy listę zaczynając od mety i cofając się aż do pola start, którego poprzednik ma wartość równą zero, czyli nie ma poprzednika/ sam jest swoim własnym poprzednikiem. Następnie tworzy tablice dynamiczną, do której wpisuje indeksy pól mapy zawartych w ścieżce 
+\begin{DoxyParams}{Parametry}
+{\em tablica\+Najkrotszych\+Polaczen} & jest to wskaźnik do tablicy jednowymiarowej w której są zapisane wartości indeksów odpowiednie dla poszczególnych punktów \\
+\hline
+{\em start} & jest to pole na którym lista się kończy, jest to początek ścieżki \\
+\hline
+{\em meta} & jest to pole, z którego ścieżka się zaczyna, jest to pierwsze pole w liście \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Funkcja zwraca tablicę dynamiczną indeksów pól zawartych w ścieżce i rozmiar tej tablicy 
+\end{DoxyReturn}

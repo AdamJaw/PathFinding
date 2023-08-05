@@ -1,0 +1,72 @@
+\hypertarget{odnajdywanie_sciezki_8h}{}\doxysection{Dokumentacja pliku wersja\+Graficzna/odnajdywanie\+Sciezki.h}
+\label{odnajdywanie_sciezki_8h}\index{wersjaGraficzna/odnajdywanieSciezki.h@{wersjaGraficzna/odnajdywanieSciezki.h}}
+
+
+Plik nagłówkowy modułu odnajdywanie\+Sciezki.  
+
+
+Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{odnajdywanie_sciezki_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Komponenty}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_s_i_r}{SIR}}
+\begin{DoxyCompactList}\small\item\em Struktura zawierająca scieżkę \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_s_i_r}{SIR}} \mbox{\hyperlink{odnajdywanie_sciezki_8h_af6bbb3c2dc3d78f0794d05a98908d8b0}{stworz\+Sciezke}} (int $\ast$\&tablica\+Najkrotszych\+Polaczen, int start, int meta)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracająca ścieżkę dla poszczególnych pól start/meta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Plik nagłówkowy modułu odnajdywanie\+Sciezki. 
+
+
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{odnajdywanie_sciezki_8h_af6bbb3c2dc3d78f0794d05a98908d8b0}\label{odnajdywanie_sciezki_8h_af6bbb3c2dc3d78f0794d05a98908d8b0}} 
+\index{odnajdywanieSciezki.h@{odnajdywanieSciezki.h}!stworzSciezke@{stworzSciezke}}
+\index{stworzSciezke@{stworzSciezke}!odnajdywanieSciezki.h@{odnajdywanieSciezki.h}}
+\doxysubsubsection{\texorpdfstring{stworzSciezke()}{stworzSciezke()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_i_r}{SIR}} stworz\+Sciezke (\begin{DoxyParamCaption}\item[{int $\ast$\&}]{tablica\+Najkrotszych\+Polaczen,  }\item[{int}]{start,  }\item[{int}]{meta }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracająca ścieżkę dla poszczególnych pól start/meta. 
+
+Funkcja przy użyciu tabeli poprzedników zawierającej informacje na temat pól, z których można dojść do danego pola z najmniejszym kosztem \begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{algorytm_b_f_8cpp_a496f925a65c652d38bb92a3b256c3249}{stworz\+Tabele\+Najkrotszych\+Polaczen(int $\ast$\&tabela\+Polaczen,int start,parametry\+Mapy PM)}}; tworzy listę której pierwszym elementem jest pole meta, a następnie pola o coraz mniejszej wadze, ścieżka kończy się gdy indeks poprzednika będzie równy zero czyli pole to będzie polem, z którego zaczyna się ścieżka Następnie tworzy tablicę dynamiczną, do której wpisywane są indeksy pól mapy zawartych w ścieżce 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parametry}
+{\em tablica\+Najkrotszych\+Polaczen} & jest to wskaźnik do tablicy jednowymiarowej w której są zapisane wartości indeksów odpowiednie dla poszczególnych punktów \\
+\hline
+{\em start} & jest to pole na którym lista się kończy, jest to początek ścieżki \\
+\hline
+{\em meta} & jest to pole, z którego ścieżka się zaczyna, jest to pierwsze pole w liście \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Funkcja zwraca tablicę dynamiczną indeksów pól zawartych w ścieżce i rozmiar tej tablicy
+\end{DoxyReturn}
+
+
+Funkcja przy użyciu tablicy poprzedników (pól o najmniejszych kosztach dotarcia z pola start) tworzy listę zaczynając od mety i cofając się aż do pola start, którego poprzednik ma wartość równą zero, czyli nie ma poprzednika/ sam jest swoim własnym poprzednikiem. Następnie tworzy tablice dynamiczną, do której wpisuje indeksy pól mapy zawartych w ścieżce 
+\begin{DoxyParams}{Parametry}
+{\em tablica\+Najkrotszych\+Polaczen} & jest to wskaźnik do tablicy jednowymiarowej w której są zapisane wartości indeksów odpowiednie dla poszczególnych punktów \\
+\hline
+{\em start} & jest to pole na którym lista się kończy, jest to początek ścieżki \\
+\hline
+{\em meta} & jest to pole, z którego ścieżka się zaczyna, jest to pierwsze pole w liście \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Funkcja zwraca tablicę dynamiczną indeksów pól zawartych w ścieżce i rozmiar tej tablicy 
+\end{DoxyReturn}

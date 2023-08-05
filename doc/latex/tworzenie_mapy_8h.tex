@@ -1,0 +1,105 @@
+\hypertarget{tworzenie_mapy_8h}{}\doxysection{Dokumentacja pliku wersja\+Graficzna/tworzenie\+Mapy.h}
+\label{tworzenie_mapy_8h}\index{wersjaGraficzna/tworzenieMapy.h@{wersjaGraficzna/tworzenieMapy.h}}
+
+
+Plik nagłówkowy modułu tworzenie\+Mapy.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+Wykres zależności załączania dla tworzenie\+Mapy.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{tworzenie_mapy_8h__incl}
+\end{center}
+\end{figure}
+Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tworzenie_mapy_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Komponenty}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structparametry_mapy}{parametry\+Mapy}}
+\begin{DoxyCompactList}\small\item\em Struktura zawierająca parametry mapy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structparametry_mapy}{parametry\+Mapy}} \mbox{\hyperlink{tworzenie_mapy_8h_a6ed825d4a470ec0349741cc81e49be04}{przypisz\+Parametry\+Mapy}} (std\+::string nazwa\+Pliku)
+\begin{DoxyCompactList}\small\item\em Funkcja przypisująca dane na temat aktualnie działającej mapy. \end{DoxyCompactList}\item 
+int $\ast$ \mbox{\hyperlink{tworzenie_mapy_8h_abca606022b7fb3f9dc95ff0a03a75da4}{stworz\+Mape}} (\mbox{\hyperlink{structparametry_mapy}{parametry\+Mapy}} PM)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracająca zero-\/jedynkową reprezentacje mapy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Plik nagłówkowy modułu tworzenie\+Mapy. 
+
+
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{tworzenie_mapy_8h_a6ed825d4a470ec0349741cc81e49be04}\label{tworzenie_mapy_8h_a6ed825d4a470ec0349741cc81e49be04}} 
+\index{tworzenieMapy.h@{tworzenieMapy.h}!przypiszParametryMapy@{przypiszParametryMapy}}
+\index{przypiszParametryMapy@{przypiszParametryMapy}!tworzenieMapy.h@{tworzenieMapy.h}}
+\doxysubsubsection{\texorpdfstring{przypiszParametryMapy()}{przypiszParametryMapy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structparametry_mapy}{parametry\+Mapy}} przypisz\+Parametry\+Mapy (\begin{DoxyParamCaption}\item[{std\+::string}]{nazwa\+Pliku }\end{DoxyParamCaption})}
+
+
+
+Funkcja przypisująca dane na temat aktualnie działającej mapy. 
+
+Funkcja na podstawie nazwy pliku tekstowego, w którym mapa jest zawarta przypisuje wysokość i szerokość mapy \begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{wymiary_mapy_8h_aac6acf508a6e83aba9897adc360563f4}{szerokosc\+Mapy(std\+::string nazwa\+Pliku)}}; 
+
+\mbox{\hyperlink{wymiary_mapy_8h_a907cb4f3ec2866adbaaef67954782ade}{wysokosc\+Mapy(std\+::string nazwa\+Pliku)}}; 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parametry}
+{\em nazwa\+Pliku} & to nazwa pliku, z którego pobierana jest aktualna mapa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Funkcja zwraca strukturę zawierająca wysokość, szerokość i nazwę pliku aktualnie działającej mapy 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tworzenie_mapy_8h_abca606022b7fb3f9dc95ff0a03a75da4}\label{tworzenie_mapy_8h_abca606022b7fb3f9dc95ff0a03a75da4}} 
+\index{tworzenieMapy.h@{tworzenieMapy.h}!stworzMape@{stworzMape}}
+\index{stworzMape@{stworzMape}!tworzenieMapy.h@{tworzenieMapy.h}}
+\doxysubsubsection{\texorpdfstring{stworzMape()}{stworzMape()}}
+{\footnotesize\ttfamily int $\ast$ stworz\+Mape (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structparametry_mapy}{parametry\+Mapy}}}]{PM }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracająca zero-\/jedynkową reprezentacje mapy. 
+
+Funkcja zwraca zero-\/jedynkową reprezentacje aktualnej mapy w formie wskaźnika do tablicy dynamicznej używa przy tym zewnętrznych funkcji \begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{lista_elementow_mapy_8cpp_a0ae9110177b66c492746a1dd880d3ff9}{lista\+Elementow\+ZPliku(string nazwa\+Pliku)}} 
+
+\mbox{\hyperlink{wymiary_mapy_8h_a2c1597d134b5a75655512ee707d9a12c}{ilosc\+Elementow\+Mapy(std\+::string nazwa\+Pliku)}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parametry}
+{\em struktura} & zawierająca informacje na temat szerokości, wysokości i nazwy aktualnie działającej mapy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Funkcja zwraca wskaźnik do jednowymiarowej tablicy dynamicznej przechowującej zero-\/jedynkową reprezentację mapy
+\end{DoxyReturn}
+
+
+Funkcja tworzy zero-\/jedynkową reprezentacje mapy pobranej z pliku tekstowego przy użyciu listy jednokierunkowej zawierającej te wartości \begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{lista_elementow_mapy_8cpp_a0ae9110177b66c492746a1dd880d3ff9}{lista\+Elementow\+ZPliku(string nazwa\+Pliku)}} 
+
+\mbox{\hyperlink{wymiary_mapy_8h_a2c1597d134b5a75655512ee707d9a12c}{ilosc\+Elementow\+Mapy(std\+::string nazwa\+Pliku)}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parametry}
+{\em struktura} & zawierająca informacje na temat szerokości, wysokości i nazwy aktualnie działającej mapy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Funkcja zwraca wskaźnik do jednowymiarowej tablicy dynamicznej przechowującej zero-\/jedynkową reprezentację mapy 
+\end{DoxyReturn}

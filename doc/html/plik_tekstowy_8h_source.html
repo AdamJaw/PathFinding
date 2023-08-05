@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Wyszukiwanie najkrótszej ścieżki: Plik źródłowy wersjaGraficzna/plikTekstowy.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Wyszukiwanie najkrótszej ścieżki
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_3f52b42b2ed328bdd70ab2ed718c7f7e.html">wersjaGraficzna</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">plikTekstowy.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="plik_tekstowy_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef PLIKTEKSTOWY_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define PLIKTEKSTOWY_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="tworzenie_mapy_8h.html">tworzenieMapy.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="odnajdywanie_sciezki_8h.html">odnajdywanieSciezki.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="plik_tekstowy_8h.html#a2403242516d9cd852845a8d75950cde5">   22</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="plik_tekstowy_8h.html#a2403242516d9cd852845a8d75950cde5">SprawdzCzyZawartoscPlikuPoprawna</a>(std::string nazwaMapy);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keywordtype">void</span> <a class="code hl_function" href="plik_tekstowy_8h.html#a7b28502ccfd4764f500ea695e1dd6151">ZapiszDoPliku</a>(<span class="keywordtype">string</span> nazwaPliku, <span class="keywordtype">int</span> *mapa, <a class="code hl_struct" href="struct_s_i_r.html">SIR</a> sciezka, <a class="code hl_struct" href="structparametry_mapy.html">parametryMapy</a> PM);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#endif </span><span class="comment">// PLIKTEKSTOWY_H</span></div>
+<div class="ttc" id="aodnajdywanie_sciezki_8h_html"><div class="ttname"><a href="odnajdywanie_sciezki_8h.html">odnajdywanieSciezki.h</a></div><div class="ttdoc">Plik nagłówkowy modułu odnajdywanieSciezki.</div></div>
+<div class="ttc" id="aplik_tekstowy_8h_html_a2403242516d9cd852845a8d75950cde5"><div class="ttname"><a href="plik_tekstowy_8h.html#a2403242516d9cd852845a8d75950cde5">SprawdzCzyZawartoscPlikuPoprawna</a></div><div class="ttdeci">bool SprawdzCzyZawartoscPlikuPoprawna(std::string nazwaMapy)</div><div class="ttdoc">Funkcja zwracająca wartość true/false czy plik jest poprawny.</div></div>
+<div class="ttc" id="aplik_tekstowy_8h_html_a7b28502ccfd4764f500ea695e1dd6151"><div class="ttname"><a href="plik_tekstowy_8h.html#a7b28502ccfd4764f500ea695e1dd6151">ZapiszDoPliku</a></div><div class="ttdeci">void ZapiszDoPliku(string nazwaPliku, int *mapa, SIR sciezka, parametryMapy PM)</div><div class="ttdoc">Funkcja zapisująca mapę i ścieżkę do pliku.</div><div class="ttdef"><b>Definition:</b> plikTekstowy.cpp:54</div></div>
+<div class="ttc" id="astruct_s_i_r_html"><div class="ttname"><a href="struct_s_i_r.html">SIR</a></div><div class="ttdoc">Struktura zawierająca scieżkę</div><div class="ttdef"><b>Definition:</b> odnajdywanieSciezki.h:12</div></div>
+<div class="ttc" id="astructparametry_mapy_html"><div class="ttname"><a href="structparametry_mapy.html">parametryMapy</a></div><div class="ttdoc">Struktura zawierająca parametry mapy.</div><div class="ttdef"><b>Definition:</b> tworzenieMapy.h:13</div></div>
+<div class="ttc" id="atworzenie_mapy_8h_html"><div class="ttname"><a href="tworzenie_mapy_8h.html">tworzenieMapy.h</a></div><div class="ttdoc">Plik nagłówkowy modułu tworzenieMapy.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

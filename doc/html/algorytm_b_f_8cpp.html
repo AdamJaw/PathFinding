@@ -1,0 +1,408 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Wyszukiwanie najkrótszej ścieżki: Dokumentacja pliku wersjaGraficzna/algorytmBF.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Wyszukiwanie najkrótszej ścieżki
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_3f52b42b2ed328bdd70ab2ed718c7f7e.html">wersjaGraficzna</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle"><div class="title">Dokumentacja pliku algorytmBF.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &quot;<a class="el" href="tworzenie_mapy_8h_source.html">tworzenieMapy.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="algorytm_b_f_8h_source.html">algorytmBF.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Wykres zależności załączania dla algorytmBF.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="algorytm_b_f_8cpp__incl.png" border="0" usemap="#awersja_graficzna_2algorytm_b_f_8cpp" alt=""/></div>
+<map name="awersja_graficzna_2algorytm_b_f_8cpp" id="awersja_graficzna_2algorytm_b_f_8cpp">
+<area shape="rect" title=" " alt="" coords="5,5,173,45"/>
+<area shape="rect" title=" " alt="" coords="51,240,123,265"/>
+<area shape="rect" href="tworzenie_mapy_8h.html" title="Plik nagłówkowy modułu tworzenieMapy." alt="" coords="76,167,196,192"/>
+<area shape="rect" href="algorytm_b_f_8h.html" title="Plik nagłówkowy modułu algorytmBF." alt="" coords="127,93,227,119"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:abd257517caa7b01e98dc4e92386a2969"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="algorytm_b_f_8cpp.html#abd257517caa7b01e98dc4e92386a2969">znajdzIndeksPunktu</a> (<a class="el" href="structparametry_mapy.html">parametryMapy</a> PM, int X, int Y)</td></tr>
+<tr class="memdesc:abd257517caa7b01e98dc4e92386a2969"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja zwracająca indeks pola na mapie.  <br /></td></tr>
+<tr class="separator:abd257517caa7b01e98dc4e92386a2969"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a965e79f6cda1e7c6a7b3f4c55de69110"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_punkt.html">Punkt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="algorytm_b_f_8cpp.html#a965e79f6cda1e7c6a7b3f4c55de69110">znajdzWspolrzednePunktu</a> (int indeks, <a class="el" href="structparametry_mapy.html">parametryMapy</a> PM)</td></tr>
+<tr class="memdesc:a965e79f6cda1e7c6a7b3f4c55de69110"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja zwracająca współrzędne punktu na mapie Funkcja przyjmuje indeks i parametry mapy dzieli indeks przez szerokość mapy, żeby otrzymać współrzędną X Żeby otrzymać współrzędną Y zwraca resztę z dzielenia indeksu przez szerokosc mapy.  <br /></td></tr>
+<tr class="separator:a965e79f6cda1e7c6a7b3f4c55de69110"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38a9124d8f094c4ba38f5216585a8bc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="algorytm_b_f_8cpp.html#a38a9124d8f094c4ba38f5216585a8bc6">stworzTabliceKosztow</a> (int *&amp;tabelaKosztow, int start, <a class="el" href="structparametry_mapy.html">parametryMapy</a> PM)</td></tr>
+<tr class="memdesc:a38a9124d8f094c4ba38f5216585a8bc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja tworząca tablicę kosztów dotarcia do celu.  <br /></td></tr>
+<tr class="separator:a38a9124d8f094c4ba38f5216585a8bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a496f925a65c652d38bb92a3b256c3249"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="algorytm_b_f_8cpp.html#a496f925a65c652d38bb92a3b256c3249">stworzTabeleNajkrotszychPolaczen</a> (int *&amp;tabelaPolaczen, int start, <a class="el" href="structparametry_mapy.html">parametryMapy</a> PM)</td></tr>
+<tr class="memdesc:a496f925a65c652d38bb92a3b256c3249"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja tworząca tablicę najkrótszych połączeń  <br /></td></tr>
+<tr class="separator:a496f925a65c652d38bb92a3b256c3249"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95cce933a2901a9d107f7d36a4fad52a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="algorytm_b_f_8cpp.html#a95cce933a2901a9d107f7d36a4fad52a">sprawdzWszystkichSasiadow</a> (int *&amp;mapa, int indeks, int *&amp;tabelaKosztow, int *&amp;tabelaPolaczen, <a class="el" href="structparametry_mapy.html">parametryMapy</a> PM)</td></tr>
+<tr class="memdesc:a95cce933a2901a9d107f7d36a4fad52a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja sprawdzająca otoczenie punktu na mapie.  <br /></td></tr>
+<tr class="separator:a95cce933a2901a9d107f7d36a4fad52a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab08d505c30a4ff7253522702af5ac5cf"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="algorytm_b_f_8cpp.html#ab08d505c30a4ff7253522702af5ac5cf">bellmanoFord</a> (<a class="el" href="structparametry_mapy.html">parametryMapy</a> PM, int *mapa, int rozmiar, <a class="el" href="struct_s_a_m.html">SAM</a> sam)</td></tr>
+<tr class="memdesc:ab08d505c30a4ff7253522702af5ac5cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja wytyczająca najkrótszą scieżkę  <br /></td></tr>
+<tr class="separator:ab08d505c30a4ff7253522702af5ac5cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="ab08d505c30a4ff7253522702af5ac5cf" name="ab08d505c30a4ff7253522702af5ac5cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab08d505c30a4ff7253522702af5ac5cf">&#9670;&#160;</a></span>bellmanoFord()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int * bellmanoFord </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structparametry_mapy.html">parametryMapy</a>&#160;</td>
+          <td class="paramname"><em>PM</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>mapa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rozmiar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_s_a_m.html">SAM</a>&#160;</td>
+          <td class="paramname"><em>sam</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja wytyczająca najkrótszą scieżkę </p>
+<p>Funkcja tworzy tablicę kosztóW i tablicę najkrótszych połączeń między punktami. Następnie przy użyciu funkcji sprawdzWszystkichSasiadow </p><dl class="section see"><dt>Zobacz również</dt><dd><a class="el" href="algorytm_b_f_8cpp.html#a95cce933a2901a9d107f7d36a4fad52a" title="Funkcja sprawdzająca otoczenie punktu na mapie.">sprawdzWszystkichSasiadow(int *&amp;mapa, int indeks, int *&amp;tabelaKosztow, int *&amp;tabelaPolaczen, parametryMapy PM)</a>; Aktualizuje w każdym kolejnym przejściu utworzone tablicę tak, że każdy punkt pod koniec działania funkcji ma swój koszt dotarcia od startu i wybranego sąsiada z którego do tego punktu można dojść najszybciej </dd></dl>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">PM</td><td>struktura zawierająca szerokość i wysokość mapy niezbędną do przyznania wartości każdemu z pól </td></tr>
+    <tr><td class="paramname">mapa</td><td>jest to wskaźnik do jednowymiarowej tablicy indeksów zawierających punkty na mapie </td></tr>
+    <tr><td class="paramname">rozmiar</td><td>jest to ilość wszystkich pól jakie są na mapie </td></tr>
+    <tr><td class="paramname">sam</td><td>jest to struktura zawierająca indeks pola z którego zaczyna się ścieżka i indeks pola, na którym kończy się ścieżka </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>funkcja zwraca tablicę jednowymiarową zawierającą dla każdego indeksu tablicy indeks w polu wartość z którego do tego pola jest najmniejszy koszt dotarcia </dd></dl>
+
+</div>
+</div>
+<a id="a95cce933a2901a9d107f7d36a4fad52a" name="a95cce933a2901a9d107f7d36a4fad52a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95cce933a2901a9d107f7d36a4fad52a">&#9670;&#160;</a></span>sprawdzWszystkichSasiadow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sprawdzWszystkichSasiadow </td>
+          <td>(</td>
+          <td class="paramtype">int *&amp;&#160;</td>
+          <td class="paramname"><em>mapa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>indeks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&amp;&#160;</td>
+          <td class="paramname"><em>tabelaKosztow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&amp;&#160;</td>
+          <td class="paramname"><em>tabelaPolaczen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structparametry_mapy.html">parametryMapy</a>&#160;</td>
+          <td class="paramname"><em>PM</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja sprawdzająca otoczenie punktu na mapie. </p>
+<p>Funkcja dla każdego punktu sprawdza sąsiadów wprowadzonego punktu W pierwszej kolejności sprawdza czy sąsiedzi istnieją tzn. czy współrzędne sąsiadów nie wykraczają poza wymiary mapy Jeśli sąsiad mieści się w granicach mapy to jest dopisywany jako kraniec krawędzi, a jego koszt dotarcia jest o jeden większy od pola, z którego sprawdzany jest dany sąsiad. Następnie sprawdzane jest czy pole nie jest przeszkodą, jeśli nie to w przypadku kiedy ścieżka przeprowadzona przez tego sąsiada jest mniejsza niż ta zawarta w tabeli kosztów i połączeń to dane są aktualizowane </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mapa</td><td>jest to wskaźnik do jednowymiarowej tablicy indeksów zawierających punkty na mapie </td></tr>
+    <tr><td class="paramname">indeks</td><td>jest indeksem pola dla którego w danym przejściu pętli sprawdzana jest sytuacja z sąsiadami tego punktu </td></tr>
+    <tr><td class="paramname">tabelaKosztow</td><td>jest to wskaźnik do tablicy jednowymiarowej w której zostaną zapisane wartości wag odpowiednie dla poszczególnych punktów </td></tr>
+    <tr><td class="paramname">tabelaPolaczen</td><td>jest to wskaźnik do tablicy jednowymiarowej w której zostaną zapisane wartości indeksów odpowiednie dla poszczególnych punktów </td></tr>
+    <tr><td class="paramname">PM</td><td>struktura zawierająca szerokość i wysokość mapy niezbędną do przyznania wartości każdemu z pól </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a496f925a65c652d38bb92a3b256c3249" name="a496f925a65c652d38bb92a3b256c3249"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a496f925a65c652d38bb92a3b256c3249">&#9670;&#160;</a></span>stworzTabeleNajkrotszychPolaczen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stworzTabeleNajkrotszychPolaczen </td>
+          <td>(</td>
+          <td class="paramtype">int *&amp;&#160;</td>
+          <td class="paramname"><em>tabelaPolaczen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structparametry_mapy.html">parametryMapy</a>&#160;</td>
+          <td class="paramname"><em>PM</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja tworząca tablicę najkrótszych połączeń </p>
+<p>Funkcja przyjmuje tablicę jednowymiarową i dla każdego pola na mapie poza polem, które jest określone jako start przypisuje wartość -1, a dla indeksu, który jest indeksem start przypisuje wartość zero </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tabelaPolaczen</td><td>jest to wskaźnik do tablicy jednowymiarowej w której zostaną zapisane wartości indeksów odpowiednie dla poszczególnych punktów </td></tr>
+    <tr><td class="paramname">start</td><td>to pole, które zostaję uznane przez program za pole które nie ma poprzedników i przypisana zostaje mu wartość 0 </td></tr>
+    <tr><td class="paramname">PM</td><td>struktura zawierająca szerokość i wysokość mapy niezbędną do przyznania wartości każdemu z pól </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a38a9124d8f094c4ba38f5216585a8bc6" name="a38a9124d8f094c4ba38f5216585a8bc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38a9124d8f094c4ba38f5216585a8bc6">&#9670;&#160;</a></span>stworzTabliceKosztow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stworzTabliceKosztow </td>
+          <td>(</td>
+          <td class="paramtype">int *&amp;&#160;</td>
+          <td class="paramname"><em>tabelaKosztow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structparametry_mapy.html">parametryMapy</a>&#160;</td>
+          <td class="paramname"><em>PM</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja tworząca tablicę kosztów dotarcia do celu. </p>
+<p>Funkcja tworząca tablicę kosztów dotarcia do celu Funkcja uzupełniająca tablicę wartością 0 dla pola wskazanego jako start co oznacza, że koszt dotarcia do pola, z którego się zaczyna jest równy zero Dla każdego innego pola na mapie zostaje przypisana wartość nie możliwa do osiągnięcia czyli kwadrat rozmiaru całej mapy jako domyślna wartość kosztu dotarcia do tego pola Funkcja nie zwraca żadnej wartości, wpisuje wartości do istniejącej tablicy.</p>
+<p>Funkcja przyjmuję tablicę jednowymiarową i dla każdego pola na mapie poza polem, które jest określone jako start przypisuje wartość która jest kwadratem ilości wszystkich pól znajdujących się na mapie </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tabelaKosztow</td><td>jest to wskaźnik do tablicy jednowymiarowej w której zostaną zapisane wartości wag odpowiednie dla poszczególnych punktów </td></tr>
+    <tr><td class="paramname">start</td><td>to pole, które zostaję uznane przez program za pole które nie ma poprzedników i przypisana zostaje mu wartość 0 </td></tr>
+    <tr><td class="paramname">PM</td><td>struktura zawierająca szerokość i wysokość mapy niezbędną do przyznania wartości każdemu z pól </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abd257517caa7b01e98dc4e92386a2969" name="abd257517caa7b01e98dc4e92386a2969"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd257517caa7b01e98dc4e92386a2969">&#9670;&#160;</a></span>znajdzIndeksPunktu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int znajdzIndeksPunktu </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structparametry_mapy.html">parametryMapy</a>&#160;</td>
+          <td class="paramname"><em>PM</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>X</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>Y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja zwracająca indeks pola na mapie. </p>
+<p>Funkcja przyjmuje parametry związane z wielkością mapy mnoży szerokość ze współrzędną X i dodaje współrzędną Y </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">PM</td><td>struktura zawierająca szerokosc i wysokosc mapy niezbędną do wyznaczenia indeksu pola </td></tr>
+    <tr><td class="paramname">X</td><td>współrzędna w płaszczyźnie poziomej pola na mapie </td></tr>
+    <tr><td class="paramname">Y</td><td>współrzędna w płaszczyźnie pionowej pola na mapie </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>indeks punktu (X,Y) </dd></dl>
+
+</div>
+</div>
+<a id="a965e79f6cda1e7c6a7b3f4c55de69110" name="a965e79f6cda1e7c6a7b3f4c55de69110"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a965e79f6cda1e7c6a7b3f4c55de69110">&#9670;&#160;</a></span>znajdzWspolrzednePunktu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_punkt.html">Punkt</a> znajdzWspolrzednePunktu </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>indeks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structparametry_mapy.html">parametryMapy</a>&#160;</td>
+          <td class="paramname"><em>PM</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja zwracająca współrzędne punktu na mapie Funkcja przyjmuje indeks i parametry mapy dzieli indeks przez szerokość mapy, żeby otrzymać współrzędną X Żeby otrzymać współrzędną Y zwraca resztę z dzielenia indeksu przez szerokosc mapy. </p>
+<p>Funkcja zwracająca współrzędne punktu na mapie.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">indeks</td><td>to indeks na którym znajduje się punkt w tablicy jednowymiarowej zawierającej mapę </td></tr>
+    <tr><td class="paramname">PM</td><td>struktura zawierająca szerokosc i wysokosc mapy niezbędną do wyznaczenia współrzędnych pola </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd><a class="el" href="struct_punkt.html" title="Koordynaty punktu na mapie.">Punkt</a> struktura zawierająca współrzędne X i Y pola na mapie </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

@@ -1,0 +1,95 @@
+\hypertarget{wymiary_mapy_8h}{}\doxysection{Dokumentacja pliku wersja\+Graficzna/wymiary\+Mapy.h}
+\label{wymiary_mapy_8h}\index{wersjaGraficzna/wymiaryMapy.h@{wersjaGraficzna/wymiaryMapy.h}}
+
+
+Plik nagłówkowy modułu wymiary\+Mapy.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+Wykres zależności załączania dla wymiary\+Mapy.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{wymiary_mapy_8h__incl}
+\end{center}
+\end{figure}
+Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{wymiary_mapy_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{wymiary_mapy_8h_aac6acf508a6e83aba9897adc360563f4}{szerokosc\+Mapy}} (std\+::string nazwa\+Pliku)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracająca szerokość aktualnej mapy. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{wymiary_mapy_8h_a907cb4f3ec2866adbaaef67954782ade}{wysokosc\+Mapy}} (std\+::string nazwa\+Pliku)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracająca wysokość aktualnej mapy. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{wymiary_mapy_8h_a2c1597d134b5a75655512ee707d9a12c}{ilosc\+Elementow\+Mapy}} (std\+::string nazwa\+Pliku)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracająca ilość wszystkich pól znajdujących się na aktualnej mapie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Plik nagłówkowy modułu wymiary\+Mapy. 
+
+
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{wymiary_mapy_8h_a2c1597d134b5a75655512ee707d9a12c}\label{wymiary_mapy_8h_a2c1597d134b5a75655512ee707d9a12c}} 
+\index{wymiaryMapy.h@{wymiaryMapy.h}!iloscElementowMapy@{iloscElementowMapy}}
+\index{iloscElementowMapy@{iloscElementowMapy}!wymiaryMapy.h@{wymiaryMapy.h}}
+\doxysubsubsection{\texorpdfstring{iloscElementowMapy()}{iloscElementowMapy()}}
+{\footnotesize\ttfamily int ilosc\+Elementow\+Mapy (\begin{DoxyParamCaption}\item[{std\+::string}]{nazwa\+Pliku }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracająca ilość wszystkich pól znajdujących się na aktualnej mapie. 
+
+Funkcja przy użyciu funkcji zewnętrznych mnoży ilość wierszy przez ilość kolumn, aby otrzymać ilość elementów mapy 
+\begin{DoxyParams}{Parametry}
+{\em nazwa\+Pliku} & to nazwa pliku, z którego pobierana jest aktualna mapa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Funkcja zwraca ilość wszystkich pól, z których składa się mapa 
+\end{DoxyReturn}
+\mbox{\Hypertarget{wymiary_mapy_8h_aac6acf508a6e83aba9897adc360563f4}\label{wymiary_mapy_8h_aac6acf508a6e83aba9897adc360563f4}} 
+\index{wymiaryMapy.h@{wymiaryMapy.h}!szerokoscMapy@{szerokoscMapy}}
+\index{szerokoscMapy@{szerokoscMapy}!wymiaryMapy.h@{wymiaryMapy.h}}
+\doxysubsubsection{\texorpdfstring{szerokoscMapy()}{szerokoscMapy()}}
+{\footnotesize\ttfamily int szerokosc\+Mapy (\begin{DoxyParamCaption}\item[{std\+::string}]{nazwa\+Pliku }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracająca szerokość aktualnej mapy. 
+
+Funkcja dla każdego wiersza w pliku tekstowym zlicza ilość cyfr się w nim znajdującym Stale nadpisuje długość najdłuższego wiersza, który pod koniec działania funkcji staje się szerokością mapy 
+\begin{DoxyParams}{Parametry}
+{\em nazwa\+Pliku} & to nazwa pliku, z którego pobierana jest aktualna mapa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Funkcja zwraca ilość elementów najdłuższego wiersza w pliku, czyli szerokość mapy 
+\end{DoxyReturn}
+\mbox{\Hypertarget{wymiary_mapy_8h_a907cb4f3ec2866adbaaef67954782ade}\label{wymiary_mapy_8h_a907cb4f3ec2866adbaaef67954782ade}} 
+\index{wymiaryMapy.h@{wymiaryMapy.h}!wysokoscMapy@{wysokoscMapy}}
+\index{wysokoscMapy@{wysokoscMapy}!wymiaryMapy.h@{wymiaryMapy.h}}
+\doxysubsubsection{\texorpdfstring{wysokoscMapy()}{wysokoscMapy()}}
+{\footnotesize\ttfamily int wysokosc\+Mapy (\begin{DoxyParamCaption}\item[{std\+::string}]{nazwa\+Pliku }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracająca wysokość aktualnej mapy. 
+
+Funkcja zlicza wszystkie wiersze jakie występują w pliku tekstowym i otrzymaną wartość zwraca jako wysokość mapy 
+\begin{DoxyParams}{Parametry}
+{\em nazwa\+Pliku} & to nazwa pliku, z którego pobierana jest aktualna mapa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Funkcja zwraca ilość wierszy w pliku aktualnie pobieranej mapy, czyli jej wysokość 
+\end{DoxyReturn}

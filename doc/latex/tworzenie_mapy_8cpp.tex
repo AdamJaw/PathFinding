@@ -1,0 +1,71 @@
+\hypertarget{tworzenie_mapy_8cpp}{}\doxysection{Dokumentacja pliku wersja\+Graficzna/tworzenie\+Mapy.cpp}
+\label{tworzenie_mapy_8cpp}\index{wersjaGraficzna/tworzenieMapy.cpp@{wersjaGraficzna/tworzenieMapy.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}tworzenie\+Mapy.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}wymiary\+Mapy.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Lista\+Elementow\+Mapy.\+h\char`\"{}}\newline
+Wykres zależności załączania dla tworzenie\+Mapy.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tworzenie_mapy_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structparametry_mapy}{parametry\+Mapy}} \mbox{\hyperlink{tworzenie_mapy_8cpp_abfc249461c651e8cbe36028e7ebc0585}{przypisz\+Parametry\+Mapy}} (string nazwa\+Pliku)
+\begin{DoxyCompactList}\small\item\em Funkcja przypisująca dane na temat aktualnie działającej mapy. \end{DoxyCompactList}\item 
+int $\ast$ \mbox{\hyperlink{tworzenie_mapy_8cpp_abca606022b7fb3f9dc95ff0a03a75da4}{stworz\+Mape}} (\mbox{\hyperlink{structparametry_mapy}{parametry\+Mapy}} PM)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracająca zero-\/jedynkową reprezentacje mapy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{tworzenie_mapy_8cpp_abfc249461c651e8cbe36028e7ebc0585}\label{tworzenie_mapy_8cpp_abfc249461c651e8cbe36028e7ebc0585}} 
+\index{tworzenieMapy.cpp@{tworzenieMapy.cpp}!przypiszParametryMapy@{przypiszParametryMapy}}
+\index{przypiszParametryMapy@{przypiszParametryMapy}!tworzenieMapy.cpp@{tworzenieMapy.cpp}}
+\doxysubsubsection{\texorpdfstring{przypiszParametryMapy()}{przypiszParametryMapy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structparametry_mapy}{parametry\+Mapy}} przypisz\+Parametry\+Mapy (\begin{DoxyParamCaption}\item[{string}]{nazwa\+Pliku }\end{DoxyParamCaption})}
+
+
+
+Funkcja przypisująca dane na temat aktualnie działającej mapy. 
+
+Funkcja na podstawie nazwy pliku, z którego pobierana jest mapa tworzy strukturę przechowująca informacje na temat szerokości aktualnej mapy, jej wysokości i jej nazwę. \begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{wymiary_mapy_8h_aac6acf508a6e83aba9897adc360563f4}{szerokosc\+Mapy(std\+::string nazwa\+Pliku)}}; 
+
+\mbox{\hyperlink{wymiary_mapy_8h_a907cb4f3ec2866adbaaef67954782ade}{wysokosc\+Mapy(std\+::string nazwa\+Pliku)}}; 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parametry}
+{\em nazwa\+Pliku} & to nazwa pliku, z którego pobierana jest aktualna mapa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Funkcja zwraca strukturę zawierająca wysokość, szerokość i nazwę pliku aktualnie działającej mapy 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tworzenie_mapy_8cpp_abca606022b7fb3f9dc95ff0a03a75da4}\label{tworzenie_mapy_8cpp_abca606022b7fb3f9dc95ff0a03a75da4}} 
+\index{tworzenieMapy.cpp@{tworzenieMapy.cpp}!stworzMape@{stworzMape}}
+\index{stworzMape@{stworzMape}!tworzenieMapy.cpp@{tworzenieMapy.cpp}}
+\doxysubsubsection{\texorpdfstring{stworzMape()}{stworzMape()}}
+{\footnotesize\ttfamily int $\ast$ stworz\+Mape (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structparametry_mapy}{parametry\+Mapy}}}]{PM }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracająca zero-\/jedynkową reprezentacje mapy. 
+
+Funkcja tworzy zero-\/jedynkową reprezentacje mapy pobranej z pliku tekstowego przy użyciu listy jednokierunkowej zawierającej te wartości \begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{lista_elementow_mapy_8cpp_a0ae9110177b66c492746a1dd880d3ff9}{lista\+Elementow\+ZPliku(string nazwa\+Pliku)}} 
+
+\mbox{\hyperlink{wymiary_mapy_8h_a2c1597d134b5a75655512ee707d9a12c}{ilosc\+Elementow\+Mapy(std\+::string nazwa\+Pliku)}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parametry}
+{\em struktura} & zawierająca informacje na temat szerokości, wysokości i nazwy aktualnie działającej mapy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Funkcja zwraca wskaźnik do jednowymiarowej tablicy dynamicznej przechowującej zero-\/jedynkową reprezentację mapy 
+\end{DoxyReturn}
