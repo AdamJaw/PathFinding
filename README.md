@@ -7,7 +7,8 @@ Program that finds the shortest path on a 2D map using Bellmano-Ford algorithm m
 * [Setup](#setup)
 
 ## General info
-Project was made for educational purposes. My goal here was to learn how pathfinding algorithms works and to learn how to make organized small projects. Project was made before an account on GitHub was created.
+Project was made for educational purposes. My goal here was to learn how pathfinding algorithms works and to learn how to make organized small projects. 
+Project was made before an account on GitHub was created.
 	
 ## Technologies
 Project is created with:
